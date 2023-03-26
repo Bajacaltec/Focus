@@ -2,13 +2,19 @@ from boto import config
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
+import sqlite3
 from streamlit_option_menu import option_menu
-st.set_page_config(layout='wide',page_title='Haz tu tesis',page_icon='🦈')
+st.set_page_config(layout='wide',page_title='Haz tu tesis')
 # revisar este como nicial
 #Menu#
 # modificación del menú#
 #iconos poner el nombre de bootstrap
 # with st.sidebar: (ponerlo en el sidebar)
+
+cur=sqlite3.connect('Db.db')
+con=cur.cursor()
+con.execute('CREATE TABLE s')
+
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 
 #Portada
@@ -24,6 +30,8 @@ if seleccion=='Portada':
             st.text_input('Autor 1:')
             st.text_input('Autor 2:')
             st.text_input('Autor 3:')
+            
+            
 
 
 
