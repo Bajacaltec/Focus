@@ -13,7 +13,10 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
 cur=sqlite3.connect('Db.db')
 con=cur.cursor()
-con.execute('CREATE TABLE s')
+con.execute('''CREATE TABLE IF NOT EXISTS proteus (Folio INTEGER PRIMARY KEY,
+            Institucion TEXT)''')
+cur.commit()
+
 
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 
@@ -22,7 +25,9 @@ if seleccion=='Portada':
         st.write('Menú')
         institucion,titulo,autores=st.columns([1,2,1])
         with institucion:
-            st.text_input('Institución:')
+            x=st.text_input('Institución:')
+            con.execute('INSERT INTO proteus VALUES(1,"hola")')
+            cur.commit()
         with titulo:
             st.text_area('Título:')
 
