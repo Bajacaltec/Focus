@@ -1,5 +1,4 @@
 import streamlit as st
-from annotated_text import annotated_text
 import streamlit_authenticator as stauth
 
 
