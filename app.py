@@ -11,18 +11,5 @@ import streamlit_authenticator as stauth
 #Nombre de la webapp
 
 menu=st.selectbox('Menú',['Portada','Índice'])
-annotated_text(
-    "This ",
-    ("Bolitochs", "verb"),
-    " some ",
-    ("annotated", "adj"),
-    ("text", "noun"),
-    " for those of ",
-    ("you", "pronoun"),
-    " who ",
-    ("like", "verb"),
-    " this sort of ",
-    ("thing", "noun"),
-    "."
-)
+
 st.text_input('Ponle')
