@@ -2,7 +2,7 @@ from boto import config
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
-import sqlite3
+import psycopg2
 from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
 #Menu#
@@ -10,6 +10,8 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 #iconos poner el nombre de bootstrap
 # with st.sidebar: (ponerlo en el sidebar)
 
+#Base render
+conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a Port=5432")
 
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 #Portada
