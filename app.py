@@ -6,12 +6,12 @@ import psycopg
 from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
 #Menu#
-# modificación del menú#
+# modificación el menú#
 #iconos poner el nombre de bootstrap
 # with st.sidebar: (ponerlo en el sidebar)
 st.write('Prueba de upload')
 #Base render
-conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
+conn = psycopg.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
 
 def create_tables():
     """ create tables in the PostgreSQL database"""
@@ -55,7 +55,7 @@ def create_tables():
         # read the connection parameters
         params = config()
         # connect to the PostgreSQL server
-        conn = psycopg2.connect(**params)
+        conn = psycopg.connect(**params)
         cur = conn.cursor()
         # create table one by one
         for command in commands:
@@ -64,7 +64,7 @@ def create_tables():
         cur.close()
         # commit the changes
         conn.commit()
-    except (Exception, psycopg2.DatabaseError) as error:
+    except (Exception, psycopg.DatabaseError) as error:
         print(error)
     finally:
         if conn is not None:
