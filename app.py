@@ -3,7 +3,6 @@ from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
 import sqlite3
-import pandas as pd
 from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
 # revisar este como nicial
@@ -14,17 +13,15 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
 
 
+
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-
-def load_data(sheets_url):
-    csv_url = sheets_url.replace("/edit#gid=", "/export?format=csv&gid=")
-    return pd.read_csv(csv_url)
-
-df = load_data(st.secrets["public_gsheets_url"])
-
-# Print results.
-for row in df.itertuples():
-    st.write(f"{row.name} has a :{row.pet}:")
+#Portada
+if seleccion=='Portada':
+        st.write('Menú')
+        institucion,titulo,autores=st.columns([1,2,1])
+        with institucion:
+            x=st.text_input('Institución:')
+            
             
 # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
 
