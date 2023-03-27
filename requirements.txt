@@ -1,5 +1,6 @@
 boto==2.49.0
 matplotlib==3.4.3
 psycopg2==2.9.5
+psycopg2_binary==2.9.5
 streamlit==1.10.0
 streamlit_option_menu==0.3.2
