@@ -2,7 +2,7 @@ from boto import config
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
-import psycopg2
+import psycopg
 from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
 #Menu#
