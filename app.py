@@ -11,7 +11,7 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 # with st.sidebar: (ponerlo en el sidebar)
 st.write('Prueba de upload')
 #Base render
-conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a Port=5432")
+conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
 
 def create_tables():
     """ create tables in the PostgreSQL database"""
