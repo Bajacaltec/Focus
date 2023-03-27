@@ -1,4 +1,3 @@
-from boto import config
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
