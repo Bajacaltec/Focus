@@ -5,13 +5,10 @@ import streamlit as st
 import sqlite3
 from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
-# revisar este como nicial
 #Menu#
 # modificación del menú#
 #iconos poner el nombre de bootstrap
 # with st.sidebar: (ponerlo en el sidebar)
-
-
 
 
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
