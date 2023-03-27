@@ -18,12 +18,17 @@ with institucion:
 # modificación el menú#
 #iconos poner el nombre de bootstrap
 # with st.sidebar: (ponerlo en el sidebar)
+
+
+#como usar postgres
+#https://www.youtube.com/watch?v=M2NzvnfS-hI
+
 st.write('Prueba de upload')
 #Base render
 conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
 cur=conn.cursor()
 
-creartabla='''CREATE TABLE IF NOT EXISTS prueba (id int PRIMARY KEY,
+creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
 institucion varchar(40)'''
 
 insertartabla='''INSERT INTO prueba(id,institucion) VALUES(%s,%s)'''
