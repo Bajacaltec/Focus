@@ -24,7 +24,7 @@ with institucion:
 
 st.write('Prueba de upload')
 #Base render
-conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
+conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=postgres://base_vhom_user:dpg-cggclf02qv28tc396eng-a.oregon-postgres.render.com port=5432")
 cur=conn.cursor()
 
 creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
