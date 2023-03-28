@@ -30,7 +30,9 @@ cur=conn.cursor()
 creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
 institucion varchar(40)'''
 
-insertartabla='''INSERT INTO prueba(id,institucion) VALUES(%s,%s)'''
+cur.execute(creartabla)
+
+insertartabla='''INSERT INTO prueba(id,institucion) VALUES(1,"e")'''
 insertarvalores=(id,x)
 cur.execute(insertartabla,insertarvalores)
 
