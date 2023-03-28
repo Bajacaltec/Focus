@@ -6,42 +6,20 @@ from streamlit_option_menu import option_menu
 st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-#Portada
 if seleccion=='Portada':
-    st.write('Menú')
-    institucion,titulo,autores=st.columns([1,2,1])
-    with institucion:
-        id=st.number_input('id)')
-        x=st.text_input('Institución:')
-#Menu#
-# modificación el menú#
-#iconos poner el nombre de bootstrap
-# with st.sidebar: (ponerlo en el sidebar)
-
-
-#como usar postgres
-#https://www.youtube.com/watch?v=M2NzvnfS-hI
-
-st.write('Prueba de upload')
-#Base render
-conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
-cur=conn.cursor()
-
-creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
-institucion varchar(40))'''
-cur.execute(creartabla)
-conn.commit()
-cur.execute('''INSERT INTO prueba(id,institucion) VALUES(1,'e');''')
-
-conn.commit()
-
-
-cur.close()
-conn.close()
-
-
-            
-            
+    nombre=st.text_input('Nombre del usuario (solo un nombre)')
+    if nombre=='Cesar':
+        st.error('Puto')
+        st.balloons()
+    elif nombre=='cesar':
+        st.error('Puto')
+        st.balloons()
+    elif nombre=='Alonso':
+        st.success('Sr. Doctor')
+    elif nombre=='alonso':
+        st.success('Doctorazo')
+                
+                
 # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
 
 
