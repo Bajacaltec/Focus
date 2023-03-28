@@ -29,9 +29,9 @@ cur=conn.cursor()
 
 creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
 institucion varchar(40))'''
-
-cur.execute('''INSERT INTO prueba(institucion) VALUES('e');''')
 cur.execute(creartabla)
+cur.execute('''INSERT INTO prueba(institucion) VALUES('e');''')
+
 conn.commit()
 
 
