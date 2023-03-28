@@ -7,12 +7,12 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
 seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 #Portada
-
-st.write('Menú')
-institucion,titulo,autores=st.columns([1,2,1])
-with institucion:
-    id=st.number_input('id)')
-    x=st.text_input('Institución:')
+if seleccion=='Portada':
+    st.write('Menú')
+    institucion,titulo,autores=st.columns([1,2,1])
+    with institucion:
+        id=st.number_input('id)')
+        x=st.text_input('Institución:')
 #Menu#
 # modificación el menú#
 #iconos poner el nombre de bootstrap
