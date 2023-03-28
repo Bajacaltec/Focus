@@ -33,7 +33,7 @@ institucion varchar(40));'''
 cur.execute(creartabla)
 conn.commit()
 
-insertartabla='''INSERT INTO prueba(id,institucion) VALUES("1","e")'''
+insertartabla='''INSERT INTO prueba(institucion) VALUES("e")'''
 insertarvalores=(id,x)
 cur.execute(insertartabla)
 
