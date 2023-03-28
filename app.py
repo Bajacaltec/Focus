@@ -35,7 +35,7 @@ conn.commit()
 
 insertartabla='''INSERT INTO prueba(id,institucion) VALUES(1,"e")'''
 insertarvalores=(id,x)
-cur.execute(insertartabla,insertarvalores)
+cur.execute(insertartabla)
 
 cur.execute(creartabla)
 conn.commit()
