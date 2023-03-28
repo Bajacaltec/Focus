@@ -18,6 +18,10 @@ if seleccion=='Portada':
         st.success('Sr. Doctor')
     elif nombre=='alonso':
         st.success('Doctorazo')
+    elif nombre=='Fernando':
+        st.success('Señor Fernando, bienvenido')
+    elif nombre=='fernando':
+        st.success('Buen dia jovenazo')
                 
                 
 # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
