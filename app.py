@@ -31,6 +31,7 @@ creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
 institucion varchar(40);'''
 
 cur.execute(creartabla)
+conn.commit()
 
 insertartabla='''INSERT INTO prueba(id,institucion) VALUES(1,"e")'''
 insertarvalores=(id,x)
