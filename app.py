@@ -28,7 +28,7 @@ conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3
 cur=conn.cursor()
 
 creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
-institucion varchar(40)'''
+institucion varchar(40);'''
 
 cur.execute(creartabla)
 
