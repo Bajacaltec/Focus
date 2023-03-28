@@ -31,7 +31,7 @@ creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
 institucion varchar(40))'''
 cur.execute(creartabla)
 conn.commit()
-cur.execute('''INSERT INTO prueba(institucion) VALUES('e');''')
+cur.execute('''INSERT INTO prueba(institucion) VALUES(1,'e');''')
 
 conn.commit()
 
