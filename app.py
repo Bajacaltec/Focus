@@ -39,13 +39,7 @@ conn.commit()
 cur.close()
 conn.close()
 
-seleccion=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-#Portada
-if seleccion=='Portada':
-        st.write('Menú')
-        institucion,titulo,autores=st.columns([1,2,1])
-        with institucion:
-            x=st.text_input('Institución:')
+
             
             
 # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
