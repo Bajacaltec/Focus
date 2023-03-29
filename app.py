@@ -18,7 +18,8 @@ st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
 eins,swei,drei=st.columns([1,2,1])
 with eins:
-    st.write('lotbctec')
+    logolottie=load_lottieurl('https://assets3.lottiefiles.com/private_files/lf30_e62sfpwn.json')
+    st_lottie(logolottie,height=50)
 with drei:
     mex=load_lottieurl('https://assets6.lottiefiles.com/packages/lf20_jidselhy.json')
     st_lottie(mex,height=50)
