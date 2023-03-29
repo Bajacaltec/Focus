@@ -7,6 +7,7 @@ import json
 from streamlit_lottie import st_lottie
 import psycopg2
 from streamlit_option_menu import option_menu
+st.set_page_config(layout='wide',page_title='Haz tu tesis',menu_items=None,page_icon='Doit')
 
 def load_lottieurl(url: str):
     r = requests.get(url)
@@ -14,16 +15,15 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-st.set_page_config(layout='wide',page_title='Haz tu tesis')
 
-eins,swei,drei=st.columns([1,2,1])
+eins,swei,drei=st.columns([2,1,1])
 with eins:
-    logolottie=load_lottieurl('https://assets3.lottiefiles.com/private_files/lf30_e62sfpwn.json')
-    st_lottie(logolottie,height=50)
+    st.title('Baja Caltec-Focus')
+
 with drei:
     mex=load_lottieurl('https://assets6.lottiefiles.com/packages/lf20_jidselhy.json')
     st_lottie(mex,height=50)
-seleccion=option_menu(None,['Principal','Asesores','Trabajos publicados','Contacto','Ingresa'],orientation='horizontal',icons=['journal-medical','card-list','type'])
+seleccion=option_menu(None,['Principal','Asesores','Trabajos publicados','Contacto','Pago','Ingresa'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 
 if seleccion=='Principal':
     uno,dos,tres=st.columns([1,2,1])
@@ -46,68 +46,72 @@ if seleccion=='Principal':
         st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
         st.info('Realiza tu proyecto de investigación en la modalidad y alcance que requieras en tiempo record')
 
+elif seleccion=='Pago':
+    st.write('pagar')
     
 elif seleccion=='Ingresa':
-    seleccion1=option_menu(None,['Principal','Portada','Índice','Just','Hipo','Plant','M-T'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-
-    #Portada
-    institucion,titulo,autores=st.columns([1,2,1])
-    with institucion:
-        id=st.number_input('ID')
-        x=st.text_input('Institución:')
-    #Menu#
-    # modificación el menú#
-    #iconos poner el nombre de bootstrap
-    # with st.sidebar: (ponerlo en el sidebar)
-
-
-    #como usar postgres
-    #https://www.youtube.com/watch?v=M2NzvnfS-hI
-
-    #Base render
-    conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
-    cur=conn.cursor()
-
-    creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
-    institucion varchar(40))'''
-    cur.execute(creartabla)
-    conn.commit()
-    cur.execute('''INSERT INTO prueba(id,institucion) VALUES(%s,%s);''',(id,x))
-
-    conn.commit()
+    st.balloons()
+    
+    seleccion1=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T','Resultados','Graficos','Figuras','Conclusiones','Discusión','Referencias'],orientation='horizontal',icons=['journal-medical','card-list','type'])
+    if seleccion1=='Portada':
+        #Portada
+        institucion,titulo,autores=st.columns([1,2,1])
+        with institucion:
+            id=st.number_input('ID')
+            x=st.text_input('Institución:')
+        #Menu#
+        # modificación el menú#
+        #iconos poner el nombre de bootstrap
+        # with st.sidebar: (ponerlo en el sidebar)
 
 
-    cur.close()
-    conn.close()
-                
-# postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
+        #como usar postgres
+        #https://www.youtube.com/watch?v=M2NzvnfS-hI
+
+        #Base render
+        conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
+        cur=conn.cursor()
+
+        creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
+        institucion varchar(40))'''
+        cur.execute(creartabla)
+        conn.commit()
+        cur.execute('''INSERT INTO prueba(id,institucion) VALUES(%s,%s);''',(id,x))
+
+        conn.commit()
+
+
+        cur.close()
+        conn.close()
+                    
+    # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
 
 
 
-#deploy la app en Render
-#https://www.youtube.com/watch?v=4SO3CUWPYf0
+    #deploy la app en Render
+    #https://www.youtube.com/watch?v=4SO3CUWPYf0
 
-#subir app de streamlit en linea a Render
-#https://www.youtube.com/watch?v=4SO3CUWPYf0
+    #subir app de streamlit en linea a Render
+    #https://www.youtube.com/watch?v=4SO3CUWPYf0
 
-#hacer un cv en linea
-#https://www.youtube.com/watch?v=BXAeMICmUSQ
+    #hacer un cv en linea
+    #https://www.youtube.com/watch?v=BXAeMICmUSQ
 
 
-#https://www.youtube.com/watch?v=3egaMfE9388
+    #https://www.youtube.com/watch?v=3egaMfE9388
 
-#https://www.youtube.com/watch?v=VqgUkExPvLY
+    #https://www.youtube.com/watch?v=VqgUkExPvLY
 
-#Navigation MEnu
-#https://youtu.be/hEPoto5xp3k
+    #Navigation MEnu
+    #https://youtu.be/hEPoto5xp3k
 
-# hacer uso de la autenticatión app de streamlit para controlar accesos
-# https://github.com/mkhorasani/Streamlit-Authenticator
+    # hacer uso de la autenticatión app de streamlit para controlar accesos
+    # https://github.com/mkhorasani/Streamlit-Authenticator
 
-#Usar lottie para agregar animaciones en la pagina
-# https://github.com/andfanilo/streamlit-lottie
-#Baja Caltec o Nunztec
-#Nombre de la webapp
+    #Usar lottie para agregar animaciones en la pagina
+    # https://github.com/andfanilo/streamlit-lottie
+    #Baja Caltec o Nunztec
+    #Nombre de la webapp
 
 
 
