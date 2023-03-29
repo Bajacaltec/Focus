@@ -43,7 +43,7 @@ if seleccion=='Principal':
 
     with tres:
 
-        st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/tesiscxcolcardio.png')
         st.info('Realiza tu proyecto de investigación en la modalidad y alcance que requieras en tiempo record')
 
 elif seleccion=='Pago':
