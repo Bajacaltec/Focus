@@ -1,4 +1,5 @@
        
+from turtle import width
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
@@ -29,23 +30,32 @@ if seleccion=='Principal':
     uno,dos,tres=st.columns([1,2,1])
     with uno:
         lotbook=load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_tnrzlN.json')
-        st_lottie(lotbook)
         st.info('En Tesisya nos encargamos de guiarte con nuestra Webapp, personalizada para el trabajo de investigación en cuestión te apoyamos desde el inicio en cuanto a la elección de tema de investigación, búsqueda de información, desarrollo del proyecto, análisis estadístico CORRECTO, escritura de la tesis, publicación y traducción al ingles')
+        st_lottie(lotbook)
+
+        st.image('/Users/alonso/Focus/Imagenes/posterneurospora.png')
+        st.info('Poster para congreso de ciencias biológicas')
         
     with dos:
         lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
-            
         st.subheader('¿No sabes por donde empezar?')
+
+        st_lottie(lottie_hello,height=150) 
         st.info('¿Cual es tu tema de interes?')
         st.info('Documentate, investiga la información actual')
         st.info('¿Cual es la pregunta de investigación')
-        st_lottie(lottie_hello,height=150)
+        st.video('/Users/alonso/Focus/Imagenes/cxcorazon.mp4',start_time=0)
+        st.error('Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
+       
+        
 
     with tres:
 
-        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/tesiscxcolcardio.png')
+        st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
         st.info('Realiza tu proyecto de investigación en la modalidad y alcance que requieras en tiempo record')
-
+        st.success('Utilizamos el lenguaje R para el análisis estadístico y programación con python para hacer mas fácil tu proceso de desarrollo de tu proyecto de investigación, no necesitas nada mas que nuestra orientación y herramientas')
+        st.image('/Users/alonso/Focus/Imagenes/articulocureus.png')
+        st.success('Reporte de caso de necrosis gástrica publicado en revista Cureus en idioma inglés')
 elif seleccion=='Pago':
     st.write('pagar')
     
