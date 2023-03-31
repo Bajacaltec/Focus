@@ -90,10 +90,9 @@ elif seleccion=='Contacto':
         
         <input type="email" name="email" placeholder="Tu correo electrónico (email)" required>
         <input type="text" name="Número de telefono (opcional)" placeholder="Número de teléfono" >
-
         <input type="text" name="name" placeholder="¿Cual es tu nombre?" required>
         <textarea name="message" placeholder="¿En que podemos ayudarte?"></textarea>
-        <input type="hidden" name="_next" value="http://192.168.1.103:8501">
+        <input type="hidden" name="_next" value="https://bajacaltec-focus-correo-app-g0xpcv.streamlit.app">
         <button type="submit">Enviar</button>
         </form>
         """
