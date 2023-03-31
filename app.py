@@ -29,7 +29,7 @@ with tol2:
 
 
 
-seleccion=option_menu(None,['Principal','Contacto','Pago','Ingresa'],orientation='horizontal',icons=['journal-medical','card-list','type'])
+seleccion=option_menu(None,['Principal','Contacto','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'])
 
 if seleccion=='Principal':
     
@@ -114,16 +114,16 @@ elif seleccion=='Contacto':
 elif seleccion=='Pago':
     st.write('pagar')
     
-elif seleccion=='Ingresa':
-    st.balloons()
+#elif seleccion=='Ingresa':
+ #   st.balloons()
     
-    seleccion1=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T','Resultados','Graficos','Figuras','Conclusiones','Discusión','Referencias'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-    if seleccion1=='Portada':
+  #  seleccion1=option_menu(None,['Portada','Índice','Just','Hipo','Plant','M-T','Resultados','Graficos','Figuras','Conclusiones','Discusión','Referencias'],orientation='horizontal',icons=['journal-medical','card-list','type'])
+   # if seleccion1=='Portada':
         #Portada
-        institucion,titulo,autores=st.columns([1,2,1])
-        with institucion:
-            id=st.number_input('ID')
-            x=st.text_input('Institución:')
+    #    institucion,titulo,autores=st.columns([1,2,1])
+     #   with institucion:
+      #      id=st.number_input('ID')
+       #     x=st.text_input('Institución:')
         #Menu#
         # modificación el menú#
         #iconos poner el nombre de bootstrap
@@ -134,20 +134,20 @@ elif seleccion=='Ingresa':
         #https://www.youtube.com/watch?v=M2NzvnfS-hI
 
         #Base render
-        conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
-        cur=conn.cursor()
+        #conn = psycopg2.connect("dbname=base_vhom user=base_vhom_user password=8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T host=dpg-cggclf02qv28tc396eng-a port=5432")
+        #cur=conn.cursor()
 
-        creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
-        institucion varchar(40))'''
-        cur.execute(creartabla)
-        conn.commit()
-        cur.execute('''INSERT INTO prueba(id,institucion) VALUES(%s,%s);''',(id,x))
+        #creartabla='''CREATE TABLE IF NOT EXISTS prueba(id int PRIMARY KEY,
+        #institucion varchar(40))'''
+        #cur.execute(creartabla)
+        #conn.commit()
+        #cur.execute('''INSERT INTO prueba(id,institucion) VALUES(%s,%s);''',(id,x))
 
-        conn.commit()
+        #conn.commit()
 
 
-        cur.close()
-        conn.close()
+        #cur.close()
+        #conn.close()
                     
     # postgres://base_vhom_user:8xUvM1YA3iw7Rjb1FxPTkgRf2xEFl87T@dpg-cggclf02qv28tc396eng-a/base_vhom
 
