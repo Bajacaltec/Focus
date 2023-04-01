@@ -16,6 +16,17 @@ import numpy as np
 import time
 import base64
 
+def displayPDF(file):
+    # Opening file from file path
+    with open(file, "rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+
+    # Embedding PDF in HTML
+    global pdf_display
+    pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="200" height="280" type="application/pdf"></iframe>'    # Displaying File
+    st.markdown(pdf_display, unsafe_allow_html=True)
+        
+
 
 
 def load_lottieurl(url: str):
@@ -25,19 +36,47 @@ def load_lottieurl(url: str):
     return r.json()
 
 def principal():
-    uno,dos,tres=st.columns([2,1,1])
-    with uno:
-        with st.expander('Análisis estadístico',expanded=True):
-            st.info('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
-            st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
-                ''')    
-        lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
-        st_lottie(lottie_hello,height=150)  
-        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/posterneurospora.png')
-        st.info('Poster para congreso de ciencias biológicas')
+    fol1,fol2=st.columns([5,1])
+    with fol1:
+        st.subheader('Trabajos recientes')
+    with fol2:
+        mex=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_jidselhy.json')
+        st_lottie(mex,height=50)
+    eins,swei,drei,fear,funf,sechts=st.columns(6)
+    with eins:
         st.image('/Users/alonso/Focus/Imagenes/articulocureus.png')
-        st.success('Reporte de caso de necrosis gástrica publicado en revista Cureus en idioma inglés')
-        st.info('Gráfica tus datos para hacer mas entendibles tus datos ')
+        st.caption('Reporte de caso (inglés); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
+    with swei:
+        st.image('/Users/alonso/Focus/Imagenes/posterneurospora.png')
+        st.caption('Poster para congreso nacional en ciencias biológicas: Functional Analysis of a Class II Myosina in the Apical Organization of the Filamentous Fungi Neurospora crassa')
+    with drei:
+        st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
+        st.caption('Tesis de especialidad médica: Morbilidad y mortalidad en pacientes con enfermedades cardiovasculares sometidos a colecistectomía por colecistitis aguda en el Centro Médico Nacional Siglo XXI')
+    with fear:
+        st.image('/Users/alonso/Focus/Imagenes/tesismaestria.png')
+        st.caption('Tesis para obtener el grado de maestro en ciencias: Análisis funcional de la miosina de clase II en la organización apical en el hongo filamentoso Neurospora crassa')
+
+    with funf:
+        st.image('/Users/alonso/Focus/Imagenes/Encina.png')
+        st.caption('Colaboración en curso publicación artículo en ingles de tesis de especialidad médicas:Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
+    with sechts:
+        st.image('/Users/alonso/Focus/Imagenes/Gonzalez.png')
+        st.caption('Tesis de especialidad médicas: Experiencia del manejo quirúrgico de la pancreatitis crónica en el hospital de especialidades "Dr. Bernardo Sepulveda" Centro Médico Nacional Siglo XXI')
+        
+    
+    st.markdown('_____________')
+    
+    uno,dos,tres=st.columns([1,1,1])
+    
+    with uno:
+        st.info('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
+        st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
+            ''')    
+        lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
+        st_lottie(lottie_hello,height=70)  
+        st.markdown('____________')
+        
+        
            
     with dos:
         st.subheader('¿No sabes por donde empezar?')
@@ -52,28 +91,14 @@ def principal():
         st.error('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
        
     with tres:
-        mex=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_jidselhy.json')
-        st_lottie(mex,height=50)
+        
         st.write('¿Qué es la investigación, sino una cita a ciegas con el conocimiento? ')
         st.latex('Will Harvey')
         lotbook=load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_tnrzlN.json')
-        st_lottie(lotbook)
-        st.info('Realiza tu proyecto de investigación en la modalidad y alcance que requieras en tiempo record')
-        st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
-        st.success('Utilizamos el lenguaje R para el análisis estadístico y programación con python para hacer mas fácil tu proceso de desarrollo de tu proyecto de investigación, no necesitas nada mas que nuestra orientación y herramientas')
-        st.image('/Users/alonso/Focus/Imagenes/logo.jpeg')
-        st.subheader('Visita el Medpost un diario de salud con las noticias más actuales')
-        st.markdown('https://elmedpost.wordpress.com')
-        st.image('/Users/alonso/Focus/Imagenes/Webapp medpost.png')
-        st.subheader('Utiliza nuestras Webapps')
-        displayPDF('/Users/alonso/Focus/Tesis myo2.pdf')
+        st_lottie(lotbook,width=80)
         
-def displayPDF(file):
-    # Opening file from file path
-    with open(file, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-    # Embedding PDF in HTML
-    pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="200" height="280" type="application/pdf"></iframe>'    # Displaying File
-    st.markdown(pdf_display, unsafe_allow_html=True)
-        
+        st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
+        st.caption('Pruebalas')
+        st.markdown("[![Foo](/Users/alonso/Focus/Imagenes/Webapp medpost.png)](https://bajacaltec-laboratorio-app-ocbzvq.streamlit.app)")
+    
+    
