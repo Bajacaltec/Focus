@@ -33,7 +33,7 @@ def principal():
                 ''')    
         lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
         st_lottie(lottie_hello,height=150)  
-        st.image('/Users/alonso/Focus/Imagenes/posterneurospora.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/posterneurospora.png')
         st.info('Poster para congreso de ciencias biológicas')
         st.image('/Users/alonso/Focus/Imagenes/articulocureus.png')
         st.success('Reporte de caso de necrosis gástrica publicado en revista Cureus en idioma inglés')
