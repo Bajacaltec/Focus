@@ -1,15 +1,17 @@
+from pickle import TRUE
 import streamlit as st
 
-st.title('Bienvenidos a TESSextractor')
+st.title('Bienvenidos a Tessextractor')
 
-st.info('Utilizamos el lenguaje ')
-st.success('Python')
-st.info('R')
+st.subheader('Nuestro equipo es un equipo multidisciplinario que se encargará de realizar un proyecto de investigación')
+st.markdown('Nos enfocamos en tesis en ciencias de la salud y biológicas')
 
-st.subheader('Con esto podemos realizar un trabajo de mejor calidad en el desarrolo de tu tesis de investigación y análisis estadístico')
+st.write('Utilizamos las sigueintes herramientas:')
+st.info('Lenguaje de programación python')
+st.info('Lenguaje R para el análisis estadístico')
 
-st.write('Aquí puedes poner tus datos relacionados con tu investigación')
+x=st.number_input('Tu nos brindas los datos')
+if x==1:
+    st.balloons()
 
-st.text_area('Tus datos')
-
-st.info('Nosotros analizaremos tus datos y te entregaremos el análisis y resultado de tu tesis')
+st.success('Nosotros hacemos tu proyecto de investigación y el análisis estadístico')
