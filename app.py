@@ -24,7 +24,7 @@ def load_lottieurl(url: str):
     if r.status_code != 200:
         return None
     return r.json()
-tol1,tol2,tol3=st.columns(3)
+tol1,tol2,tol3=st.columns([1,2,1])
 with tol1:
     teesextractor=load_lottieurl('https://assets9.lottiefiles.com/packages/lf20_yheqnvx7.json')
     st_lottie(teesextractor,height=100)
