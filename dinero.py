@@ -1,5 +1,6 @@
 from email.mime import image
 from importlib.resources import path
+from tkinter import Y
 import streamlit as st
 from pathlib import Path
 import requests
@@ -35,6 +36,8 @@ def money():
     
 
 """
+
+
     gol1,gol2=st.columns([5,2])
     with gol1:
         st.subheader('Área de pago')
@@ -70,16 +73,82 @@ def money():
         st.subheader('Tesis de licenciatura')
         st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
 
+
+
+    #ENLACE PARA STRIPE EN HTML
+    Y="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+            style= background-color:#2BE039
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1    "text-align:center;"></h1>
+        <a href="https://buy.stripe.com/eVabLqdWZ77c46I146">
+            <button class="btn btn-primary btn-lg">Comprar</button>
+        </a>
+    </div>
+</body>
+    
+
+"""
+
     with rol2:
         st.image('Imagenes/tesis.tiff')
-
     with rol3:
-        st.markdown(x,unsafe_allow_html=True)
+        st.markdown(Y,unsafe_allow_html=True)
         st.subheader("")
     st.markdown('_________')
 
+    zol1,zol2,zol3=st.columns([3,1,1])
+#PRUEBA
+    with zol1:
+        st.caption('Producto')
+        st.subheader('Prueba')
+        st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
 
-        
+
+
+    #ENLACE PARA STRIPE EN HTML
+    W="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+            style= background-color:#2BE039
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1    "text-align:center;"></h1>
+        <a href="https://buy.stripe.com/9AQ6r66uxbns1YA6or">
+            <button class="btn btn-primary btn-lg">Comprar</button>
+        </a>
+    </div>
+</body>
+    
+
+"""
+
+    with zol2:
+        st.image('Imagenes/tesis.tiff')
+    with zol3:
+        st.markdown(W,unsafe_allow_html=True)
+        st.subheader("")
+    st.markdown('_________')
 
         
 
