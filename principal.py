@@ -60,7 +60,7 @@ def main():
         st.markdown('____________')
         st.caption('Análisis estadístico y desarrollo de plataforma de captura a la medida, utilizamos los siguientes lenguajes de programación')
         """### gif from local file"""
-        file_ = open("/Users/alonso/Focus/Imagenes/gife.gif", "rb")
+        file_ = open("https://github.com/Bajacaltec/Focus/blob/main/Imagenes/gife.gif", "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
