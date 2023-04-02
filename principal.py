@@ -31,10 +31,14 @@ def main():
     
     hol1,hol2,hol3=st.columns(3)
     with hol1:
-        st.info('Redacción de protocolo de investigación')
+        st.info('Redacción de protocolo de investigación y búsqueda de información')
+        busqueda=load_lottieurl('https://assets9.lottiefiles.com/packages/lf20_5KobUw.json')
+        st_lottie(busqueda,height=100)
         st.info('Análisis estadístico')
     with hol2:
         st.info('Escritura de tésis')
+        tesis=load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_y2ryub2r.json")
+        st_lottie(tesis,height=120)
         st.info('Guia para la escritura de tesis')
     with hol3:
         st.info('Publicación de artículo en idioma español o inglés')
