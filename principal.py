@@ -1,6 +1,4 @@
        
-from operator import truediv
-from turtle import width
 from matplotlib.ft2font import HORIZONTAL, VERTICAL
 from matplotlib.pyplot import title
 import streamlit as st
@@ -8,7 +6,6 @@ import requests
 import matplotlib.pyplot as plt
 import json
 from streamlit_lottie import st_lottie
-import psycopg2
 from streamlit_option_menu import option_menu
 from dinero import money
 from asesores import alonso, cesar, lissvia
