@@ -1,7 +1,5 @@
 matplotlib==3.4.3
 numpy==1.20.3
-psycopg2==2.9.5
-psycopg2_binary==2.9.5
 requests==2.26.0
 streamlit==1.10.0
 streamlit_lottie==0.0.3
