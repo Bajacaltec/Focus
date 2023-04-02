@@ -84,7 +84,7 @@ def main():
         st.caption('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
 
         st.markdown('____________')
-        st.caption('Análisis estadístico y desarrollo de plataforma de captura a la medida, utilizamos los siguientes lenguajes de programación')
+        st.caption('Análisis estadístico y desarrollo de plataforma de captura personalizado, utilizamos los siguientes lenguajes de programación')
         """### gif from local file"""
         file_ = open("Imagenes/gife.gif", "rb")
         contents = file_.read()
@@ -107,8 +107,8 @@ def main():
         st.subheader('¿No sabes por donde empezar?')
         st.markdown("- Encuentra el tema que te interesa (área de especialidad, patología, algún caso en particular")
         st.markdown("- Busqueda de información(Artículos, libros, experiencias")
-        st.markdown("- Hazte una pregunta de investigación: ¿El uso de calzado abierto aumenta la posibilidad de una amputación en un paciente con Diabetes mellitus tipo II? 🤔 ")
-        st.markdown("- Y así como así empiezas una investigación, todo nace de una pregunta que se dio por observaciones previas y se nutre del conocimiento que recopilas")
+        st.markdown("- Hazte una pregunta de investigación: ¿El uso de metformina vs insulina aumenta la posibilidad de hipoglicemias en un paciente con Diabetes mellitus tipo II? 🤔 ")
+        st.markdown("- Y así nace un proyecto de investigación")
 
         st.markdown('''
         <style>
@@ -127,7 +127,6 @@ def main():
         st_lottie(lotbook,width=80)
         
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
-        st.caption('Pruebalas')
         st.image('Imagenes/Webapp medpost.png')    
     
     st.markdown('_________')
