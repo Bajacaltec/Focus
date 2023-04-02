@@ -19,30 +19,33 @@ def load_lottieurl(url: str):
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
 
-    fol1,fol2,fol3=st.columns([5,1,1])
-    with fol1:
-        st.write('Podemos ayudarte en diferentes etapas de tu proyecto')
-    
-    with fol2:
-        st.empty()
-    with fol3:
-        st.empty()
+   
         
     
     hol1,hol2,hol3=st.columns(3)
     with hol1:
-        st.info('Redacción de protocolo de investigación y búsqueda de información')
-        busqueda=load_lottieurl('https://assets9.lottiefiles.com/packages/lf20_5KobUw.json')
+        busqueda=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json')
         st_lottie(busqueda,height=100)
-        st.info('Análisis estadístico')
+        st.subheader('Análisis estadístico')
+        
     with hol2:
-        st.info('Escritura de tésis')
         tesis=load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_y2ryub2r.json")
-        st_lottie(tesis,height=120)
-        st.info('Guia para la escritura de tesis')
+        st_lottie(tesis,height=100)
+        st.markdown("""<html>
+<head>
+<title>Publicación de artículo en inglés o español</title>
+</head>
+<body bgcolor="#000000">
+<font color="#000000">
+<font size="5"> Tesis de Investigación </font>
+</body>
+</html>>""", unsafe_allow_html=True)
+       
     with hol3:
+        publicacion=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_kcxosgub.json')
+        st_lottie(publicacion,height=100)
         st.info('Publicación de artículo en idioma español o inglés')
-    
+    st.caption('Podemos ayudarte en muchas otras etapas de tu proyecto, desde busqueda de información, formato de referencias, presentación para defensa de tésis, revisión de texto y correción ortográfica, contáctanos para recibir información específica sobre el costo de la asesoría dependiendo de tus necesidades')
     st.markdown("______________")
     
     
