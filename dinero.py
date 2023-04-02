@@ -42,8 +42,7 @@ def money():
 """
     dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
     st_lottie(dinero,height=150)
-    st.info('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
-    st.info('El editor resolvera vía email todas tus dudas y los pormenores de los servicios, tiempos de entrega, etc.')
+    st.caption('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
 
     
 
