@@ -9,7 +9,8 @@ from dinero import money
 from asesores import alonso, cesar, lissvia
 import numpy as np
 import time
-import principal
+from principal import main
+import base64
 st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,page_icon='Doit')
 
 ####
@@ -33,7 +34,7 @@ seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientatio
 
 #Principal#
 if seleccion=='Principal':
-    principal()
+    main()
 
 
 

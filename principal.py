@@ -15,7 +15,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-def principal():
+def main():
     fol1,fol2=st.columns([5,1])
     with fol1:
         st.subheader('Trabajos recientes')
