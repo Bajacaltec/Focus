@@ -28,6 +28,9 @@ with tol2:
     st.write('')
     st.write('')
     st.caption('By Nunztec')
+with tol3:
+    mex=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_jidselhy.json')
+    st_lottie(mex,height=50)
     
     
 seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'])

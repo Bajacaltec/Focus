@@ -1,4 +1,5 @@
        
+from re import S
 import streamlit as st
 import requests
 import json
@@ -16,12 +17,33 @@ def load_lottieurl(url: str):
     return r.json()
 
 def main():
-    fol1,fol2=st.columns([5,1])
+    st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
+
+    fol1,fol2,fol3=st.columns([5,1,1])
     with fol1:
-        st.subheader('Trabajos más recientes')
+        st.write('Podemos ayudarte en diferentes etapas de tu proyecto')
+    
     with fol2:
-        mex=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_jidselhy.json')
-        st_lottie(mex,height=50)
+        st.empty()
+    with fol3:
+        st.empty()
+        
+    
+    hol1,hol2,hol3=st.columns(3)
+    with hol1:
+        st.info('Redacción de protocolo de investigación')
+        st.info('Análisis estadístico')
+    with hol2:
+        st.info('Escritura de tésis')
+        st.info('Guia para la escritura de tesis')
+    with hol3:
+        st.info('Publicación de artículo en idioma español o inglés')
+    
+    st.markdown("______________")
+    
+    
+    st.subheader('Trabajos recientes')
+        #Trabajos recientes
     eins,swei,drei,fear,funf,sechts=st.columns(6)
     with eins:
         st.image('Imagenes/articulocureus.png')
@@ -46,7 +68,12 @@ def main():
     
     st.markdown('_____________')
     
+    
+    
     uno,dos,tres=st.columns([1,1,1])
+
+    
+    
     
     with uno:
         st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
@@ -100,5 +127,5 @@ def main():
         st.video('Imagenes/cxcorazon.mp4',start_time=0)
         st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
 
-
-    
+ 
+ 
