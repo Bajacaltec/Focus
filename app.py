@@ -1,9 +1,6 @@
        
-from matplotlib.ft2font import HORIZONTAL, VERTICAL
-from matplotlib.pyplot import title
 import streamlit as st
 import requests
-import matplotlib.pyplot as plt
 import json
 from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
