@@ -40,7 +40,8 @@ def money():
     
 
 """
-    #generales
+    dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
+    st_lottie(dinero,height=150)
     st.info('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
     st.info('El editor resolvera vía email todas tus dudas y los pormenores de los servicios, tiempos de entrega, etc.')
 
@@ -49,8 +50,7 @@ def money():
         st.empty()
     with sol2:
 
-        dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
-        st_lottie(dinero,height=150)
+      
         
         
     colinit,colizq,colcentr,colder=st.columns(4)
