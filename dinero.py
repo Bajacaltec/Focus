@@ -54,7 +54,7 @@ def money():
         st.caption('Análisis con R, se debe proporcionar base de datos')
 
     with lol3:
-        st.image('/Users/alonso/Focus/Imagenes/anestadistica.jpg')
+        st.image('Imagenes/anestadistica.jpg')
 
     with lol4:
         st.markdown(x,unsafe_allow_html=True)
@@ -71,7 +71,7 @@ def money():
         st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
 
     with rol2:
-        st.image('/Users/alonso/Focus/Imagenes/tesis.tiff')
+        st.image('Imagenes/tesis.tiff')
 
     with rol3:
         st.markdown(x,unsafe_allow_html=True)
