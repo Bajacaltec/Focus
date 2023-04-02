@@ -96,7 +96,7 @@ def main():
         
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
         st.caption('Pruebalas')
-        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Webapp%20medpost.png')    
+        st.image('Imagenes/Webapp medpost.png')    
         st.video('/Users/alonso/Focus/Imagenes/cxcorazon.mp4',start_time=0)
         st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
 
