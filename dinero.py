@@ -46,8 +46,7 @@ def money():
 
 
     with colder:
-        st.markdown("[![Foo](/Users/alonso/Focus/Imagenes/Webapp medpost.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
-        st.caption('Poster para congreso')
+        
         x="""<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
