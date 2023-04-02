@@ -69,12 +69,29 @@ def principal():
     uno,dos,tres=st.columns([1,1,1])
     
     with uno:
-        st.info('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
         st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
             ''')    
         lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
         st_lottie(lottie_hello,height=70)  
+        st.caption('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
+
         st.markdown('____________')
+        st.caption('Análisis estadístico y desarrollo de plataforma de captura a la medida, utilizamos los siguientes lenguajes de programación')
+        """### gif from local file"""
+        file_ = open("/Users/alonso/Focus/Imagenes/gife.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+        st.markdown("![Alt Text](/Users/alonso/Focus/Imagenes/gife.gif")
+
+        st.markdown(
+            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+            unsafe_allow_html=True,
+        )        
+
+        # gif
+        st.info('Lenguaje de programación python')
+        st.info('Lenguaje de programación R')
         
         
            
@@ -87,8 +104,6 @@ def principal():
             st.warning('Diseño metodológico adecuado, los errores de ejecución se eliminan o disminuyen con un buen diseño metodológico.')
             st.warning('Análisis estadístico preciso y adecuado con el lenguaje R.')
         st.warning('Apoyo en la redacción y traducción de tesis para publicación')
-        st.video('/Users/alonso/Focus/Imagenes/cxcorazon.mp4',start_time=0)
-        st.error('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
        
     with tres:
         
@@ -99,6 +114,10 @@ def principal():
         
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
         st.caption('Pruebalas')
-        st.markdown("[![Foo](/Users/alonso/Focus/Imagenes/Webapp medpost.png)](https://bajacaltec-laboratorio-app-ocbzvq.streamlit.app)")
-    
+        htp='https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Webapp%20medpost.png'
+        st.image(htp)    
+        st.video('/Users/alonso/Focus/Imagenes/cxcorazon.mp4',start_time=0)
+        st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
+
+
     
