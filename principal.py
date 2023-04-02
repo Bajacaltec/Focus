@@ -3,22 +3,11 @@ import streamlit as st
 import requests
 import json
 from streamlit_lottie import st_lottie
-from streamlit_option_menu import option_menu
 from dinero import money
 from asesores import alonso, cesar, lissvia
 import numpy as np
 import time
-import base64
 
-def displayPDF(file):
-    # Opening file from file path
-    with open(file, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-    # Embedding PDF in HTML
-    global pdf_display
-    pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="200" height="280" type="application/pdf"></iframe>'    # Displaying File
-    st.markdown(pdf_display, unsafe_allow_html=True)
         
 
 
