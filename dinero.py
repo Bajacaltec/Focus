@@ -54,9 +54,8 @@ def money():
     <title>Button</title>
     <style>
         .container{
-            height: 200px;
-            width: 500px;
-            border: 2px solid black;
+            height: 100px;
+            width: 200px;
             margin-top: 30px;
         }
     </style>
