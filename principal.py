@@ -18,7 +18,7 @@ def load_lottieurl(url: str):
 def main():
     fol1,fol2=st.columns([5,1])
     with fol1:
-        st.subheader('Trabajos recientes')
+        st.subheader('Trabajos más recientes')
     with fol2:
         mex=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_jidselhy.json')
         st_lottie(mex,height=50)
@@ -38,10 +38,10 @@ def main():
 
     with funf:
         st.image('Imagenes/Encina.png')
-        st.caption('Colaboración en curso publicación artículo en ingles de tesis de especialidad médicas:Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
+        st.caption('Colaboración en curso publicación de tesis de especialidad médicas:Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
     with sechts:
         st.image('Imagenes/Gonzalez.png')
-        st.caption('Tesis de especialidad médicas: Experiencia del manejo quirúrgico de la pancreatitis crónica en el hospital de especialidades "Dr. Bernardo Sepulveda" Centro Médico Nacional Siglo XXI')
+        st.caption('Colaboración en curso para la publicación de tesis de especialidad médicas: Experiencia del manejo quirúrgico de la pancreatitis crónica en el hospital de especialidades "Dr. Bernardo Sepulveda" Centro Médico Nacional Siglo XXI')
         
     
     st.markdown('_____________')
