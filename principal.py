@@ -24,7 +24,7 @@ def main():
         st_lottie(mex,height=50)
     eins,swei,drei,fear,funf,sechts=st.columns(6)
     with eins:
-        st.image('/Users/alonso/Focus/Imagenes/articulocureus.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/articulocureus.png')
         st.caption('Reporte de caso (inglés); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
     with swei:
         st.image('/Users/alonso/Focus/Imagenes/posterneurospora.png')
