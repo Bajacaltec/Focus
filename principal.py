@@ -7,10 +7,7 @@ from dinero import money
 from asesores import alonso, cesar, lissvia
 import numpy as np
 import time
-
-        
-
-
+import base64
 
 def load_lottieurl(url: str):
     r = requests.get(url)
@@ -53,9 +50,11 @@ def principal():
     
     with uno:
         st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
-            ''')    
+            ''')   
+         
         lottie_hello = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_iYvSqSMKZB.json")
         st_lottie(lottie_hello,height=70)  
+        
         st.caption('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
 
         st.markdown('____________')
