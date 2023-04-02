@@ -11,7 +11,7 @@ import numpy as np
 import time
 from principal import main
 import base64
-st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,page_icon='Doit')
+st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,page_icon='Tessextractor', )
 
 ####
 # encabezado y menú
@@ -33,7 +33,12 @@ with tol3:
     st_lottie(mex,height=50)
     
     
-seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'])
+seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'], styles={
+        "container": {"padding": "0!important", "background-color": "#E1E8F8"},
+        "icon": {"color": "black", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "Center", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-#2E37A9": "#2E37A9"},
+    })
 
 #Principal#
 if seleccion=='Principal':

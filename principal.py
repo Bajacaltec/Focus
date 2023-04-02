@@ -46,7 +46,7 @@ def main():
     eins,swei,drei,fear,funf,sechts=st.columns(6)
     with eins:
         st.image('Imagenes/articulocureus.png')
-        st.caption('Reporte de caso (inglés); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
+        st.caption('Reporte de caso (En proceso de publicación); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
     with swei:
         st.image('Imagenes/posterneurospora.png')
         st.caption('Poster para congreso nacional en ciencias biológicas: Functional Analysis of a Class II Myosina in the Apical Organization of the Filamentous Fungi Neurospora crassa')
@@ -117,8 +117,8 @@ def main():
         }
         </style>
         ''', unsafe_allow_html=True)
-        st.info('Nosotros podemos ayudarte en todo el proceso de una investigación, contactanos')
-       
+        st.markdown('___________')       
+        st.info('Contactanos para poder ayudarte con tu proyecto de investigación')
     with tres:
         
         st.write('¿Qué es la investigación, sino una cita a ciegas con el conocimiento? ')
@@ -129,8 +129,15 @@ def main():
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
         st.caption('Pruebalas')
         st.image('Imagenes/Webapp medpost.png')    
+    
+    st.markdown('_________')
+    st.subheader('Media')
+    kol1,kol2,kol3=st.columns([1,1,1])
+    with kol1:
         st.video('Imagenes/cxcorazon.mp4',start_time=0)
+    with kol2:
         st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
-
+    st.markdown('____________')
+    st.caption('Tessextractor fue elaborado por Nunztec con python y streamlit, para mayor información sobre nuestros productos, ingresa a la página de contacto y envianos un E mail')
  
  
