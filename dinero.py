@@ -112,7 +112,7 @@ def money():
 #PRUEBA
     with zol1:
         st.caption('Producto')
-        st.subheader('Prueba')
+        st.subheader('Protocolo de investigación nivel posgrado')
         st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
 
 
@@ -134,7 +134,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/9AQ6r66uxbns1YA6or">
+        <a href="https://buy.stripe.com/14kg1GdWZajo7iUfZ2">
             <button class="btn btn-primary btn-lg">Comprar</button>
         </a>
     </div>
@@ -144,7 +144,7 @@ def money():
 """
 
     with zol2:
-        st.image('Imagenes/tesis.tiff')
+        st.image('Imagenes/proto_posgrado.jpg')
     with zol3:
         st.markdown(W,unsafe_allow_html=True)
         st.subheader("")
