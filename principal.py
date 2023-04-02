@@ -82,14 +82,14 @@ def principal():
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
-        st.markdown("![Alt Text](/Users/alonso/Focus/Imagenes/gife.gif")
 
         st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif" width="310" height="200">',
             unsafe_allow_html=True,
         )        
 
         # gif
+        st.write("")
         st.info('Lenguaje de programación python')
         st.info('Lenguaje de programación R')
         
@@ -114,8 +114,7 @@ def principal():
         
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
         st.caption('Pruebalas')
-        htp='https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Webapp%20medpost.png'
-        st.image(htp)    
+        st.image('/Users/alonso/Focus/Imagenes/Webapp medpost.png')    
         st.video('/Users/alonso/Focus/Imagenes/cxcorazon.mp4',start_time=0)
         st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
 
