@@ -58,17 +58,7 @@ def principal():
         st.caption('Olvidate de fórmulas complicadas, la correcta aplicación de análisis estadísticos y dejanos a ayudarte a terminar tu proyecto en el menor tiempo posible y con la mejor calidad')
 
         st.markdown('____________')
-        st.caption('Análisis estadístico y desarrollo de plataforma de captura a la medida, utilizamos los siguientes lenguajes de programación')
-        """### gif from local file"""
-        file_ = open("/Users/alonso/Focus/Imagenes/gife.gif", "rb")
-        contents = file_.read()
-        data_url = base64.b64encode(contents).decode("utf-8")
-        file_.close()
-
-        st.markdown(
-            f'<img src="data:image/gif;base64,{data_url}" alt="cat gif" width="310" height="200">',
-            unsafe_allow_html=True,
-        )        
+       
 
         # gif
         st.write("")
