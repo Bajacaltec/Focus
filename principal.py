@@ -40,7 +40,7 @@ def main():
         st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Encina.png')
         st.caption('Colaboración en curso publicación artículo en ingles de tesis de especialidad médicas:Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
     with sechts:
-        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Gonzalez.png')
+        st.image('/Users/alonso/Focus/Imagenes/Gonzalez.png')
         st.caption('Tesis de especialidad médicas: Experiencia del manejo quirúrgico de la pancreatitis crónica en el hospital de especialidades "Dr. Bernardo Sepulveda" Centro Médico Nacional Siglo XXI')
         
     
