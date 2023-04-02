@@ -55,18 +55,23 @@ def money():
         
     colinit,colizq,colcentr,colder=st.columns(4)
     with colinit:
+        st.image('Imagenes/Webapp medpost.png')
         st.markdown(x,unsafe_allow_html=True)
 
     with colizq:
         #clickable image
+        st.image('Imagenes/Webapp medpost.png')
+
         st.markdown(x,unsafe_allow_html=True)
 
 
     with colcentr:
-        
+        st.image('Imagenes/Webapp medpost.png')
+
         st.markdown(x,unsafe_allow_html=True)
 
 
     with colder:
-     
+        st.image('Imagenes/Webapp medpost.png')
+
         st.markdown(x,unsafe_allow_html=True)
