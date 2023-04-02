@@ -31,20 +31,12 @@ def main():
     with hol2:
         tesis=load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_y2ryub2r.json")
         st_lottie(tesis,height=100)
-        st.markdown("""<html>
-<head>
-<title>Publicación de artículo en inglés o español</title>
-</head>
-<body bgcolor="#000000">
-<font color="#000000">
-<font size="5"> Tesis de Investigación </font>
-</body>
-</html>>""", unsafe_allow_html=True)
+        st.subheader('Tesis de investigación')
        
     with hol3:
         publicacion=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_kcxosgub.json')
         st_lottie(publicacion,height=100)
-        st.info('Publicación de artículo en idioma español o inglés')
+        st.subheader('Publicación de artículo')
     st.caption('Podemos ayudarte en muchas otras etapas de tu proyecto, desde busqueda de información, formato de referencias, presentación para defensa de tésis, revisión de texto y correción ortográfica, contáctanos para recibir información específica sobre el costo de la asesoría dependiendo de tus necesidades')
     st.markdown("______________")
     
@@ -80,7 +72,7 @@ def main():
     uno,dos,tres=st.columns([1,1,1])
 
     
-    
+    #columna 1
     
     with uno:
         st.latex(r'''s = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \overline{x})^2} 
@@ -110,16 +102,22 @@ def main():
         st.info('Lenguaje de programación R')
         
         
-           
+    #Columna 2    
     with dos:
         st.subheader('¿No sabes por donde empezar?')
-        with st.expander('Marco teórico',expanded=True):
-            st.success('Con nuestra guía terminarás tu proyecto en el menor tiempo posible, con el menor dolor de cabeza posible, y con la mejor calidad posible.')
-            st.warning('Realiza tu protocolo de investigación con un asesor directamente trabajando contigo lado a lado.')
-        with st.expander('Que ofrece Tessextractor',expanded=True):
-            st.warning('Diseño metodológico adecuado, los errores de ejecución se eliminan o disminuyen con un buen diseño metodológico.')
-            st.warning('Análisis estadístico preciso y adecuado con el lenguaje R.')
-        st.warning('Apoyo en la redacción y traducción de tesis para publicación')
+        st.markdown("- Encuentra el tema que te interesa (área de especialidad, patología, algún caso en particular")
+        st.markdown("- Busqueda de información(Artículos, libros, experiencias")
+        st.markdown("- Hazte una pregunta de investigación: ¿El uso de calzado abierto aumenta la posibilidad de una amputación en un paciente con Diabetes mellitus tipo II? 🤔 ")
+        st.markdown("- Y así como así empiezas una investigación, todo nace de una pregunta que se dio por observaciones previas y se nutre del conocimiento que recopilas")
+
+        st.markdown('''
+        <style>
+        [data-testid="stMarkdownContainer"] ul{
+            padding-left:40px;
+        }
+        </style>
+        ''', unsafe_allow_html=True)
+        st.info('Nosotros podemos ayudarte en todo el proceso de una investigación, contactanos')
        
     with tres:
         
