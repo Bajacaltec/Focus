@@ -33,7 +33,7 @@ def money():
         
     colinit,colizq,colcentr,colder=st.columns(4)
     with colinit:
-        st.markdown("[![Foo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iedunote.com%2Fresearch-process&psig=AOvVaw26ZZwNF41_ujerCpVf2yV_&ust=1680493391500000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDXjO-jiv4CFQAAAAAdAAAAABAE)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
+        st.markdown("[![Foo](Imagenes/Webapp medpost.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
         st.caption('Protocolo de investigación nivel licenciatura')
     with colizq:
         #clickable image
