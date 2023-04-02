@@ -64,7 +64,7 @@ def money():
 <body>
     <div class="container">
         <h1 style="text-align:center;">Simple Html Button</h1>
-        <a href="https://www.google.com/">
+        <a href="https://checkout.stripe.com/c/pay/cs_live_a15DxBP3qQObEUvZguNuMa6lpP18qvUoYQOKxe849qmAiwXWDQ0crJO7q9#fidkdWxOYHwnPyd1blppbHNgWjA0SHdfdDJDXH02VjJ8R11ESXdENDMzTk5hNX9oSUFHc2t1VGJBMkh%2FQ2ROUm8wcGJJSHFRcDJ2cTZof1ddQlFsVjdNfDR1M3Q0TTVhN0IwQXNrfEJ2UUZvNTVQcUF%2FVEhAUicpJ3VpbGtuQH11anZgYUxhJz8nNDFuN2RUPEJPY0FMPWhcZEBAJ3gl">
             <button class="btn btn-primary btn-lg">Click</button>
         </a>
     </div>
