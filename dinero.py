@@ -41,7 +41,7 @@ def money():
         st.caption('Análisis estadístico')
 
     with colcentr:
-        st.markdown("[![Foo](http://www.google.com.au/images/nav_logo7.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
+        st.markdown("[![Foo](https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Webapp%20medpost.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
         st.caption('Poster para congreso')
 
 
