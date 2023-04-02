@@ -55,12 +55,12 @@ def money():
         
     colinit,colizq,colcentr,colder=st.columns(4)
     with colinit:
-        st.markdown("[![Foo](http://Imagenes/Webapp medpost.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
-        st.caption('Protocolo de investigación nivel licenciatura')
+        st.markdown(x,unsafe_allow_html=True)
+
     with colizq:
         #clickable image
-        st.markdown("[![Foo](https://www.pexels.com/es-es/foto/fotografia-de-paisaje-de-montana-nevada-1366919/)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
-        st.caption('Análisis estadístico')
+        st.markdown(x,unsafe_allow_html=True)
+
 
     with colcentr:
         
