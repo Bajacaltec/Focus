@@ -68,7 +68,7 @@ def money():
         </a>
     </div>
 </body>
-        st.map
+    
 
 """
         st.markdown(x,unsafe_allow_html=True)
