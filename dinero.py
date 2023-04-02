@@ -45,10 +45,7 @@ def money():
     st.info('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
     st.info('El editor resolvera vía email todas tus dudas y los pormenores de los servicios, tiempos de entrega, etc.')
 
-    sol1,sol2=st.columns([2,1])
-    with sol1:
-        st.empty()
-    with sol2:
+    
 
       
         
