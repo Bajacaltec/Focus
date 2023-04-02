@@ -10,7 +10,6 @@ from streamlit_option_menu import option_menu
 from contacto import contacto
 from dinero import money
 from asesores import alonso, cesar, lissvia
-from principal import displayPDF, principal
 import numpy as np
 import time
 st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,page_icon='Doit')
