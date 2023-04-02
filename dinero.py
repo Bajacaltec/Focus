@@ -17,7 +17,29 @@ def money():
     st.empty()
     st.write("")
     
+    x="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 200px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;"></h1>
+        <a href="https://checkout.stripe.com/c/pay/cs_live_a15DxBP3qQObEUvZguNuMa6lpP18qvUoYQOKxe849qmAiwXWDQ0crJO7q9#fidkdWxOYHwnPyd1blppbHNgWjA0SHdfdDJDXH02VjJ8R11ESXdENDMzTk5hNX9oSUFHc2t1VGJBMkh%2FQ2ROUm8wcGJJSHFRcDJ2cTZof1ddQlFsVjdNfDR1M3Q0TTVhN0IwQXNrfEJ2UUZvNTVQcUF%2FVEhAUicpJ3VpbGtuQH11anZgYUxhJz8nNDFuN2RUPEJPY0FMPWhcZEBAJ3gl">
+            <button class="btn btn-primary btn-lg">Comprar</button>
+        </a>
+    </div>
+</body>
+    
 
+"""
     #generales
     st.info('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
     st.info('El editor resolvera vía email todas tus dudas y los pormenores de los servicios, tiempos de entrega, etc.')
@@ -41,55 +63,10 @@ def money():
         st.caption('Análisis estadístico')
 
     with colcentr:
-        x="""<head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Button</title>
-    <style>
-        .container{
-            height: 100px;
-            width: 200px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 style="text-align:center;"></h1>
-        <a href="https://checkout.stripe.com/c/pay/cs_live_a15DxBP3qQObEUvZguNuMa6lpP18qvUoYQOKxe849qmAiwXWDQ0crJO7q9#fidkdWxOYHwnPyd1blppbHNgWjA0SHdfdDJDXH02VjJ8R11ESXdENDMzTk5hNX9oSUFHc2t1VGJBMkh%2FQ2ROUm8wcGJJSHFRcDJ2cTZof1ddQlFsVjdNfDR1M3Q0TTVhN0IwQXNrfEJ2UUZvNTVQcUF%2FVEhAUicpJ3VpbGtuQH11anZgYUxhJz8nNDFuN2RUPEJPY0FMPWhcZEBAJ3gl">
-            <button class="btn btn-primary btn-lg">Comprar</button>
-        </a>
-    </div>
-</body>
-    
-
-"""
+        
         st.markdown(x,unsafe_allow_html=True)
 
 
     with colder:
-        
-        x="""<head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Button</title>
-    <style>
-        .container{
-            height: 100px;
-            width: 200px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1 style="text-align:center;"></h1>
-        <a href="https://checkout.stripe.com/c/pay/cs_live_a15DxBP3qQObEUvZguNuMa6lpP18qvUoYQOKxe849qmAiwXWDQ0crJO7q9#fidkdWxOYHwnPyd1blppbHNgWjA0SHdfdDJDXH02VjJ8R11ESXdENDMzTk5hNX9oSUFHc2t1VGJBMkh%2FQ2ROUm8wcGJJSHFRcDJ2cTZof1ddQlFsVjdNfDR1M3Q0TTVhN0IwQXNrfEJ2UUZvNTVQcUF%2FVEhAUicpJ3VpbGtuQH11anZgYUxhJz8nNDFuN2RUPEJPY0FMPWhcZEBAJ3gl">
-            <button class="btn btn-primary btn-lg">Comprar</button>
-        </a>
-    </div>
-</body>
-    
-
-"""
+     
         st.markdown(x,unsafe_allow_html=True)
