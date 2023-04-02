@@ -34,10 +34,10 @@ with tol3:
     
     
 seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'], styles={
-        "container": {"padding": "0!important", "background-color": "#E1E8F8"},
-        "icon": {"color": "black", "font-size": "25px"}, 
-        "nav-link": {"font-size": "25px", "text-align": "Center", "margin":"0px", "--hover-color": "#eee"},
-        "nav-link-selected": {"background-#2E37A9": "#2E37A9"},
+        "container": {"padding": "0!important", "background-color": "#E5EFF6"},
+        "icon": {"color": "black", "font-size": "23px"}, 
+        "nav-link": {"font-size": "18px", "text-align": "Center", "margin":"0px", "--hover-color": "#D3EA8B"},
+        "nav-link-selected": {"background-color": "#407BD2"},
     })
 
 #Principal#

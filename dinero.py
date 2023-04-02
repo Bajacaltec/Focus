@@ -71,7 +71,7 @@ def money():
         st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
 
     with rol2:
-        st.image('Imagenes/anestadistica.jpg')
+        st.image('/Users/alonso/Focus/Imagenes/tesis.tiff')
 
     with rol3:
         st.markdown(x,unsafe_allow_html=True)
@@ -92,25 +92,4 @@ def money():
     
 
       
-        
-        
-    colinit,colizq,colcentr,colder=st.columns(4)
-    
-
-    with colizq:
-        #clickable image
-        st.image('Imagenes/Webapp medpost.png')
-
-        st.markdown(x,unsafe_allow_html=True)
-
-
-    with colcentr:
-        st.image('Imagenes/Webapp medpost.png')
-
-        st.markdown(x,unsafe_allow_html=True)
-
-
-    with colder:
-        st.image('Imagenes/Webapp medpost.png')
-
-        st.markdown(x,unsafe_allow_html=True)
+       
