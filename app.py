@@ -27,9 +27,9 @@ with tol2:
     st.write('')
     st.write('')
     st.caption('By Nunztec')
+    
+    
 seleccion=option_menu(None,['Principal','Contacto','Editores','Pago'],orientation='horizontal',icons=['journal-medical','card-list','type'])
-
-
 
 #Principal#
 if seleccion=='Principal':
