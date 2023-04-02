@@ -17,9 +17,7 @@ def alonso():
         st.subheader('Dr. Fernando Alonso Núñez Moreno')
         st.write('Médico cirujano CEUX, Campus Tijuana')
         st.write('Maestro en ciencias de la vida (MC), CICESE')
-        st.write('http://cicese.repositorioinstitucional.mx/jspui/handle/1007/662')
         st.write('Cirujano general (Esp.Médica), Centro Médico Nacional Siglo XXI/UNAM')
-        st.write('Actualmente adscrito al Hospital general de zona no. 33, Bahía de Banderas, Nayarit, coordinación de cirugía general')
         st.caption('Editor principal')
         
 

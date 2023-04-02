@@ -15,7 +15,7 @@ def contacto():
         <form action="https://formsubmit.co/mdfnunez@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         
-        <input type="email" name="email" placeholder="Tu correo electrónico (email)" required>
+        <input type="text" name="email" placeholder="Tu correo electrónico (email)" required>
         <input type="text" name="Número de telefono (opcional)" placeholder="Número de teléfono" >
         <input type="text" name="name" placeholder="¿Cual es tu nombre?" required>
         <textarea name="message" placeholder="¿En que podemos ayudarte?"></textarea>
@@ -25,7 +25,7 @@ def contacto():
         """
         mail='Contactanos <i class="bi bi-mailbox"></i>'
         st.header('Contactanos :mailbox_closed:')
-        st.caption('Ingresa tus datos para conocer más información y en caso de solicitar una videollamada especificarlo en el mensaje, ingresa tus datos en la parte inferior ⬇️')
+        st.caption('Ingresa tus datos para ponernos en contacto')
         st.markdown(contact_form, unsafe_allow_html=True)
             # Use Local CSS File
         def local_css(file_name):
