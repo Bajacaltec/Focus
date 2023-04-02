@@ -45,17 +45,35 @@ def money():
         st_lottie(dinero,height=150)
     st.markdown('__________')
 
+    #Análisis de datos
     lol2,lol3,lol4=st.columns([3,1,1])
     
     with lol2:
         st.caption('Producto')
         st.subheader('Análisis estadístico')
-        st.caption('Análisis con R, el cliente debe proporcionar base de datos completa')
+        st.caption('Análisis con R, se debe proporcionar base de datos')
 
     with lol3:
         st.image('/Users/alonso/Focus/Imagenes/anestadistica.jpg')
 
     with lol4:
+        st.markdown(x,unsafe_allow_html=True)
+        st.subheader("")
+    st.markdown('_________')
+    #
+    
+    #Tesis de licenciatura
+    rol1,rol2,rol3=st.columns([3,1,1])
+    
+    with rol1:
+        st.caption('Producto')
+        st.subheader('Tesis de licenciatura')
+        st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
+
+    with rol2:
+        st.image('Imagenes/anestadistica.jpg')
+
+    with rol3:
         st.markdown(x,unsafe_allow_html=True)
         st.subheader("")
     st.markdown('_________')

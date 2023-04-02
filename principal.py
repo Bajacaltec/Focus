@@ -1,5 +1,6 @@
        
 from re import S
+from turtle import width
 import streamlit as st
 import requests
 import json
@@ -127,15 +128,18 @@ def main():
         st_lottie(lotbook,width=80)
         
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
-        st.image('Imagenes/Webapp medpost.png')    
+        st.image('Imagenes/Webapp medpost.png')   
+        st.caption('Proximamente') 
     
     st.markdown('_________')
     st.subheader('Media')
-    kol1,kol2,kol3=st.columns([1,1,1])
+    kol1,kol2,kol3=st.columns([1,1,2])
     with kol1:
-        st.video('Imagenes/cxcorazon.mp4',start_time=0)
+        st.video('Imagenes/cxcorazon.mp4',)
+        st.info('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
+
     with kol2:
-        st.caption('Video 1. Toracotomia anterolateral izquierda con pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego en hospital de traumatología Lomas Verdes IMSS')
+        st.empty()
     st.markdown('____________')
     st.caption('Tessextractor fue elaborado por Nunztec con python y streamlit, para mayor información sobre nuestros productos, ingresa a la página de contacto y envianos un E mail')
  
