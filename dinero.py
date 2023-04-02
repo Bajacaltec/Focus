@@ -12,6 +12,7 @@ def load_lottieurl(url: str):
         return r.json()
 
 def money():
+    #Boton de pago
     x="""<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -29,14 +30,14 @@ def money():
     <div class="container">
         <h1    "text-align:center;"></h1>
         <a href="https://buy.stripe.com/fZeaHm9GJfDIeLmbIJ">
-            <button class="btn btn-primary btn-lg">Comprar</button>
+            <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
 </body>
     
 
 """
-
+# boton de pago
 
     gol1,gol2=st.columns([5,2])
     with gol1:
@@ -49,29 +50,82 @@ def money():
     st.markdown('__________')
 
     #Análisis de datos
-    lol2,lol3,lol4=st.columns([3,1,1])
+    lol1,lol2,lol3=st.columns([3,1,1])
     
-    with lol2:
-        st.caption('Producto')
+    with lol1:
+        st.caption('Servicio')
         st.subheader('Análisis estadístico')
         st.caption('Análisis con R, se debe proporcionar base de datos')
 
-    with lol3:
+    with lol2:
         st.image('Imagenes/anestadistica.jpg')
+        st.info(' MXN 3400.00')
 
-    with lol4:
+
+    with lol3:
         st.markdown(x,unsafe_allow_html=True)
         st.subheader("")
     st.markdown('_________')
-    #
+    
+    
+    
+    
+    #Procotolo de investigación nivel licenciatura
+    lol1,lol2,lol3=st.columns([3,1,1])
+#PRUEBA
+    with lol1:
+        st.caption('Servicio')
+        st.subheader('Protocolo de investigación nivel licenciatura')
+        st.caption('Elaboración de protocolo de investigación a nivel licenciatura, máximo 40 cuartillas')
+
+
+    L="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1    "text-align:center;"></h1>
+        <a href="https://buy.stripe.com/14k2aQ5qtdvA6eQaEL">
+            <button class="btn btn-primary btn-lg">Pagar</button>
+        </a>
+    </div>
+</body>
+    
+
+"""
+
+    with lol2:
+        st.image('Imagenes/protolic.jpeg')
+        st.info(' MXN 4100.00')
+
+    with lol3:
+        st.markdown(L,unsafe_allow_html=True)
+        st.subheader("")
+    st.markdown('_________')
+
+    
+    
+    
+    
+    
     
     #Tesis de licenciatura
+    
     rol1,rol2,rol3=st.columns([3,1,1])
     
     with rol1:
-        st.caption('Producto')
+        st.caption('Servicio')
         st.subheader('Tesis de licenciatura')
-        st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
+        st.caption('Elaboración de tesis de nivel licenciatura, máximo 40 cuartillas')
 
 
 
@@ -93,7 +147,7 @@ def money():
     <div class="container">
         <h1    "text-align:center;"></h1>
         <a href="https://buy.stripe.com/eVabLqdWZ77c46I146">
-            <button class="btn btn-primary btn-lg">Comprar</button>
+            <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
 </body>
@@ -103,21 +157,22 @@ def money():
 
     with rol2:
         st.image('Imagenes/tesis.tiff')
+        st.info(' MXN 7400.00')
+
     with rol3:
         st.markdown(Y,unsafe_allow_html=True)
         st.subheader("")
     st.markdown('_________')
 
     zol1,zol2,zol3=st.columns([3,1,1])
-#PRUEBA
     with zol1:
-        st.caption('Producto')
+        st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel posgrado')
-        st.caption('Elaboración de tesis de nivel licenciatura, cuartillas máximo 40 cuartillas')
+        st.caption('Elaboración de protocolo de investigación a nivel posgrado, máximo 30 cuartillas')
 
 
 
-    #ENLACE PARA STRIPE EN HTML
+    #Protocolo de investigación nivel posgrado
     W="""<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -127,7 +182,6 @@ def money():
             height: 50px;
             width: 100px;
             margin-top: 20px;
-            style= background-color:#2BE039
         }
     </style>
 </head>
@@ -135,7 +189,7 @@ def money():
     <div class="container">
         <h1    "text-align:center;"></h1>
         <a href="https://buy.stripe.com/14kg1GdWZajo7iUfZ2">
-            <button class="btn btn-primary btn-lg">Comprar</button>
+            <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
 </body>
@@ -145,13 +199,57 @@ def money():
 
     with zol2:
         st.image('Imagenes/proto_posgrado.jpg')
+        st.info(' MXN 4900.00')
+
     with zol3:
         st.markdown(W,unsafe_allow_html=True)
         st.subheader("")
     st.markdown('_________')
 
-        
 
+
+    #tesis de investigación nivel posgrado
+    pol1,pol2,pol3=st.columns([3,1,1])
+    with pol1:
+        st.caption('Servicio')
+        st.subheader('Tesis de investigación nivel posgrado')
+        st.caption('Elaboración de Tesis a nivel posgrado')
+
+
+    p="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1    "text-align:center;"></h1>
+        <a href="https://buy.stripe.com/bIY02I6ux2QWeLm8wC
+">
+            <button class="btn btn-primary btn-lg">Pagar</button>
+        </a>
+    </div>
+</body>
+    
+
+"""
+
+    with pol2:
+        st.image('Imagenes/posgradotesis.png')
+        st.info(' MXN 9800.00')
+
+    with pol3:
+        st.markdown(p,unsafe_allow_html=True)
+        st.subheader("")
+    st.markdown('_________')
+        
 
     
     
