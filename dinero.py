@@ -37,7 +37,7 @@ def money():
         st.caption('Protocolo de investigación nivel licenciatura')
     with colizq:
         #clickable image
-        st.markdown("[![Foo](https://github.com/Bajacaltec/Focus/blob/main/Imagenes/WWebapp medpost.png)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
+        st.markdown("[![Foo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fneoscientia.com%2Fdirector-de-tesis%2F&psig=AOvVaw0QxkdVKdMFp5VCyLj37h8F&ust=1680497151195000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNC4p_Cxiv4CFQAAAAAdAAAAABAE)](https://buy.stripe.com/14k2aQ9GJfDI8mYaEE)")
         st.caption('Análisis estadístico')
 
     with colcentr:
