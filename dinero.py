@@ -24,7 +24,7 @@ def money():
     <style>
         .container{
             height: 100px;
-            width: 200px;
+            width: 300px;
             margin-top: 30px;
         }
     </style>
