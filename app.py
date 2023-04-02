@@ -16,7 +16,7 @@ import numpy as np
 import time
 st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,page_icon='Doit')
 
-
+####
 # encabezado y menú
 def load_lottieurl(url: str):
     r = requests.get(url)
