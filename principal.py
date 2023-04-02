@@ -27,7 +27,7 @@ def main():
         st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/articulocureus.png')
         st.caption('Reporte de caso (inglés); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
     with swei:
-        st.image('[github]https://github.com/Bajacaltec/Focus/blob/main/Imagenes/posterneurospora.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/posterneurospora.png')
         st.caption('Poster para congreso nacional en ciencias biológicas: Functional Analysis of a Class II Myosina in the Apical Organization of the Filamentous Fungi Neurospora crassa')
     with drei:
         st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
