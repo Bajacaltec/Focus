@@ -30,14 +30,14 @@ def main():
         st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/posterneurospora.png')
         st.caption('Poster para congreso nacional en ciencias biológicas: Functional Analysis of a Class II Myosina in the Apical Organization of the Filamentous Fungi Neurospora crassa')
     with drei:
-        st.image('/Users/alonso/Focus/Imagenes/tesiscxcolcardio.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/tesiscxcolcardio.png')
         st.caption('Tesis de especialidad médica: Morbilidad y mortalidad en pacientes con enfermedades cardiovasculares sometidos a colecistectomía por colecistitis aguda en el Centro Médico Nacional Siglo XXI')
     with fear:
-        st.image('/Users/alonso/Focus/Imagenes/tesismaestria.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/tesismaestria.png')
         st.caption('Tesis para obtener el grado de maestro en ciencias: Análisis funcional de la miosina de clase II en la organización apical en el hongo filamentoso Neurospora crassa')
 
     with funf:
-        st.image('/Users/alonso/Focus/Imagenes/Encina.png')
+        st.image('https://github.com/Bajacaltec/Focus/blob/main/Imagenes/Encina.png')
         st.caption('Colaboración en curso publicación artículo en ingles de tesis de especialidad médicas:Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
     with sechts:
         st.image('/Users/alonso/Focus/Imagenes/Gonzalez.png')
