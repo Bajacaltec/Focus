@@ -72,8 +72,8 @@ col1,col2,colx=st.columns([3,1,1])
 with col1:
     st.caption('Correo electrónico: elmedpost@gmail.com o mdfnunez@gmail.com')
     st.caption('Pagina de Facebook:')
-
-    st.caption('Telefono: 3222193683')
+    st.image('Imagenes/whatsapp.png')
+    st.caption('Telefono Wha: +529617024389')
 
 
 with col2:
