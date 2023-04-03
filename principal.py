@@ -143,7 +143,5 @@ def main():
 
     with kol2:
         st.empty()
-    st.markdown('____________')
-    st.caption('Tessextractor fue elaborado por Nunztec con el lenguaje de programación python y streamlit, para mayor información sobre nuestros productos, ingresa a la página de contacto y envianos un E mail')
  
  
