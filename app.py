@@ -67,17 +67,27 @@ elif seleccion=='Pago':
 
 
 st.markdown('________')
-st.subheader('Contacto')
+jol1,jol2,jol3=st.columns([1,1,5])
+with jol1:
+    st.subheader('Contacto')
+with jol2:
+    hu=load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_twijbubv.json')
+    st_lottie(hu,height=70)
 col1,col2,colx=st.columns([3,1,1])
 with col1:
-    st.caption('Correo electrónico: elmedpost@gmail.com o mdfnunez@gmail.com')
-    st.caption('Pagina de Facebook:')
-    st.image('Imagenes/whatsapp.png')
-    st.caption('Telefono Wha: +529617024389')
+    st.image('Imagenes/gmail.png',width=35)
+    st.caption('elmedpost@gmail.com - Mdfnunez@gmail.com')
 
 
 with col2:
-    hu=load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_twijbubv.json')
-    st_lottie(hu,height=150)
+
+    st.image('Imagenes/whatsapp.png',width=35)
+    st.markdown('+529617024389')
+
+
+    
+with colx:
+    st.empty()
+    
 st.markdown('_________')
 st.caption('Tessextractor fue elaborado por Nunztec con el lenguaje de programación python y streamlit, para mayor información sobre nuestros productos, ingresa a la página de contacto y envianos un E mail')

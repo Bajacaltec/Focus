@@ -133,14 +133,14 @@ def main():
         st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
         st.image('Imagenes/Webapp medpost.png')   
         st.caption('Proximamente desarrollaremos aplicaciones Web para facilitar la captura de datos y el desarrollo de proyectos de investigación con ayuda del Medpost') 
-    
-    st.markdown('_________')
-    st.subheader('Media')
-    kol1,kol2,kol3=st.columns([1,1,2])
-    with kol1:
         st.video('Imagenes/cxcorazon.mp4',)
         st.info('Video 1. Pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego. Hospital de traumatología Lomas Verdes IMSS')
 
+    
+    kol1,kol2,kol3=st.columns([1,1,2])
+    with kol1:
+        st.empty()
+        
     with kol2:
         st.empty()
  
