@@ -76,7 +76,7 @@ def money():
     with lol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel licenciatura')
-        st.caption('Elaboración de protocolo de investigación a nivel licenciatura, máximo 40 cuartillas')
+        st.caption('Elaboración de protocolo de investigación a nivel licenciatura')
 
 
     L="""<head>
@@ -125,7 +125,7 @@ def money():
     with rol1:
         st.caption('Servicio')
         st.subheader('Tesis de licenciatura')
-        st.caption('Elaboración de tesis de nivel licenciatura, máximo 40 cuartillas')
+        st.caption('Elaboración de tesis de nivel licenciatura')
 
 
 
@@ -168,7 +168,7 @@ def money():
     with zol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel posgrado')
-        st.caption('Elaboración de protocolo de investigación a nivel posgrado, máximo 30 cuartillas')
+        st.caption('Elaboración de protocolo de investigación a nivel posgrado')
 
 
 
