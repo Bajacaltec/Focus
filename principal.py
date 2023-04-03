@@ -25,7 +25,7 @@ def main():
     with sol2:
         st.info('Contactanos por 📧, Whatsapp o ➡️')
     with sol3:
-        st.image('/Users/alonso/Focus/Imagenes/videollamada.png',width=50)
+        st.image('Imagenes/videollamada.png',width=50)
    
         
     
