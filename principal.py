@@ -19,7 +19,7 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
-
+    st.success('Cotización y trabajo muestra totalmente gratis!!!')
    
         
     

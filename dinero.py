@@ -12,6 +12,60 @@ def load_lottieurl(url: str):
         return r.json()
 
 def money():
+    # boton de pago
+
+    gol1,gol2=st.columns([5,2])
+    with gol1:
+        st.subheader('Área de pago')
+        st.caption('Se aceptan todas las tarjetas American express, Visa o Mastercard, depósito en OXXO y apple Pay')
+    with gol2:
+        dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
+        st_lottie(dinero,height=150)
+    st.markdown('__________')
+    
+    
+    #tesis de investigación nivel posgrado
+    bol1,bol2,bol3=st.columns([3,1,1])
+    with bol1:
+        st.caption('Servicio')
+        st.subheader('Tesis de investigación nivel posgrado con captura de datos')
+        st.caption('Elaboración de Tesis a nivel posgrado con captura de datos')
+
+
+    b="""<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Button</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1    "text-align:center;"></h1>
+        <a href="https://buy.stripe.com/eVa6r6f13bns6eQ14d">
+            <button class="btn btn-primary btn-lg">Pagar</button>
+        </a>
+    </div>
+</body>
+    
+
+"""
+
+    with bol2:
+        st.image('Imagenes/captura.jpg')
+        st.info(' MXN 14,500.00')
+
+    with bol3:
+        st.markdown(b,unsafe_allow_html=True)
+        st.subheader("")
+    st.markdown('________')
+    
+    
     #Boton de pago
     x="""<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
@@ -37,17 +91,7 @@ def money():
     
 
 """
-# boton de pago
 
-    gol1,gol2=st.columns([5,2])
-    with gol1:
-        st.subheader('Área de pago')
-        st.caption('Se aceptan todas las tarjetas American express, Visa o Mastercard, depósito en OXXO y apple Pay')
-        st.write('Antes de realizar alguna transferencia, contactanos para tener seguimiento por parte de un editor')
-    with gol2:
-        dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
-        st_lottie(dinero,height=150)
-    st.markdown('__________')
 
     #Análisis de datos
     lol1,lol2,lol3=st.columns([3,1,1])
