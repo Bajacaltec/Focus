@@ -19,7 +19,13 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
-    st.success('Cotización y trabajo muestra totalmente gratis!!!')
+    sol1,sol2,sol3=st.columns([2,2,1])
+    with sol1:
+        st.success('Cotización y trabajo muestra totalmente gratis!!!')
+    with sol2:
+        st.info('Contactanos por 📧, Whatsapp o ➡️')
+    with sol3:
+        st.image('/Users/alonso/Focus/Imagenes/videollamada.png',width=50)
    
         
     
