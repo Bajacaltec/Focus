@@ -21,13 +21,13 @@ def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
     sol1,sol2,sol3=st.columns([2,2,1])
     with sol1:
-        st.success('Cotización y trabajo muestra totalmente gratis!!!')
+        st.success('Cotización gratis, somos la opción más económica del mercado!!!')
     with sol2:
         st.info('Contactanos por 📧, Whatsapp o ➡️')
     with sol3:
         st.image('Imagenes/videollamada.png',width=50)
    
-        
+    st.warning('Tesis de licenciatura a tan solo 2400.00 MXN y tesis de posgrado (especialidad médica) en 3700.00 MXN')
     
     hol1,hol2,hol3=st.columns(3)
     with hol1:

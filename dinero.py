@@ -58,7 +58,7 @@ def money():
 
     with bol2:
         st.image('Imagenes/captura.jpg')
-        st.info(' MXN 14,500.00')
+        st.info(' MXN 5,500.00')
 
     with bol3:
         st.markdown(b,unsafe_allow_html=True)
@@ -103,7 +103,7 @@ def money():
 
     with lol2:
         st.image('Imagenes/anestadistica.jpg')
-        st.info(' MXN 3400.00')
+        st.info(' MXN 1900.00')
 
 
     with lol3:
@@ -149,7 +149,7 @@ def money():
 
     with lol2:
         st.image('Imagenes/protolic.jpeg')
-        st.info(' MXN 4100.00')
+        st.info(' MXN 1700.00')
 
     with lol3:
         st.markdown(L,unsafe_allow_html=True)
@@ -201,7 +201,7 @@ def money():
 
     with rol2:
         st.image('Imagenes/tesis.tiff')
-        st.info(' MXN 7400.00')
+        st.info(' MXN 2400.00')
 
     with rol3:
         st.markdown(Y,unsafe_allow_html=True)
@@ -243,7 +243,7 @@ def money():
 
     with zol2:
         st.image('Imagenes/proto_posgrado.jpg')
-        st.info(' MXN 4900.00')
+        st.info(' MXN 2300.00')
 
     with zol3:
         st.markdown(W,unsafe_allow_html=True)
@@ -287,7 +287,7 @@ def money():
 
     with pol2:
         st.image('Imagenes/posgradotesis.png')
-        st.info(' MXN 9800.00')
+        st.info(' MXN 3400.00')
 
     with pol3:
         st.markdown(p,unsafe_allow_html=True)
