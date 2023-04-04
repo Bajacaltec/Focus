@@ -27,7 +27,7 @@ def main():
     with sol3:
         st.image('Imagenes/videollamada.png',width=50)
    
-    st.warning('Tesis de licenciatura a tan solo 2400.00 MXN y tesis de posgrado (especialidad médica) en 3700.00 MXN')
+    st.warning('Asesoria en tesis de licenciatura a tan solo 2400.00 MXN y tesis de posgrado (especialidad médica) en 3700.00 MXN')
     
     hol1,hol2,hol3=st.columns(3)
     with hol1:
@@ -52,27 +52,17 @@ def main():
     
     st.subheader('Trabajos recientes')
         #Trabajos recientes
-    eins,swei,drei,fear,funf,sechts=st.columns(6)
+    eins,swei,drei,fear=st.columns(4)
     with eins:
         st.image('Imagenes/articulocureus.png')
-        st.caption('Reporte de caso (En proceso de publicación); A Case of Gastric Necrosis Due To Small Bowel Obstruction Caused By a Strangulated Femoral Hernia: Case report')
     with swei:
         st.image('Imagenes/posterneurospora.png')
-        st.caption('Poster para congreso nacional en ciencias biológicas: Functional Analysis of a Class II Myosin in the Apical Organization of the Filamentous Fungi Neurospora crassa')
     with drei:
         st.image('Imagenes/tesiscxcolcardio.png')
-        st.caption('Tesis de especialidad médica: Morbilidad y mortalidad en pacientes con enfermedades cardiovasculares sometidos a colecistectomía por colecistitis aguda en el Centro Médico Nacional Siglo XXI')
     with fear:
         st.image('Imagenes/tesismaestria.png')
-        st.caption('Tesis para obtener el grado de maestro en ciencias: Análisis funcional de la miosina de clase II en la organización apical en el hongo filamentoso Neurospora crassa')
 
-    with funf:
-        st.image('Imagenes/Encina.png')
-        st.caption('Publicación de tesis de especialidad médica (Colaboración en curso):Factores asociados a estenosis de hepaticoyeyunoanastomosis en pacientes con disrupción de vía biliar')
-    with sechts:
-        st.image('Imagenes/Gonzalez.png')
-        st.caption('Publicación de tesis de especialidad médica (Colaboración en curso): Experiencia del manejo quirúrgico de la pancreatitis crónica en el hospital de especialidades "Dr. Bernardo Sepulveda" Centro Médico Nacional Siglo XXI')
-        
+   
     
     st.markdown('_____________')
     

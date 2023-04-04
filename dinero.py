@@ -18,6 +18,7 @@ def money():
     with gol1:
         st.subheader('Área de pago')
         st.caption('Se aceptan todas las tarjetas American express, Visa o Mastercard, depósito en OXXO y apple Pay')
+        st.info('Todos los trabajos estan garantizados o te devolvemos tu dinero')
     with gol2:
         dinero=load_lottieurl('https://assets10.lottiefiles.com/packages/lf20_djwnoxew.json')
         st_lottie(dinero,height=150)
@@ -29,7 +30,7 @@ def money():
     with bol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado con captura de datos')
-        st.caption('Elaboración de Tesis a nivel posgrado con captura de datos')
+        st.caption('Tesis a nivel posgrado con captura de datos(especialidad médica')
 
 
     b="""<head>
@@ -120,7 +121,7 @@ def money():
     with lol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel licenciatura')
-        st.caption('Elaboración de protocolo de investigación a nivel licenciatura')
+        st.caption('Protocolo de investigación a nivel licenciatura: enfermería, odontología y medicina')
 
 
     L="""<head>
@@ -169,7 +170,7 @@ def money():
     with rol1:
         st.caption('Servicio')
         st.subheader('Tesis de licenciatura')
-        st.caption('Elaboración de tesis de nivel licenciatura')
+        st.caption('Tesis de nivel licenciatura: enfermería, odontología y medicina')
 
 
 
@@ -212,7 +213,7 @@ def money():
     with zol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel posgrado')
-        st.caption('Elaboración de protocolo de investigación a nivel posgrado')
+        st.caption('Protocolo de investigación a nivel posgrado: enfermeria, odontología y medicina')
 
 
 
@@ -257,7 +258,7 @@ def money():
     with pol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado')
-        st.caption('Elaboración de Tesis a nivel posgrado')
+        st.caption('Tesis a nivel posgrado (especialidad médica')
 
 
     p="""<head>
