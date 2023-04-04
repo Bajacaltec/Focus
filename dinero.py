@@ -47,7 +47,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/eVa6r6f13bns6eQ14d">
+        <a href="https://buy.stripe.com/5kA7vaf132QWbza14e">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -83,7 +83,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/fZeaHm9GJfDIeLmbIJ">
+        <a href="https://buy.stripe.com/dR6bLqf1363832EcN2">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -138,7 +138,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/14k2aQ5qtdvA6eQaEL">
+        <a href="https://buy.stripe.com/7sI8ze6ux8bgav614l">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -190,7 +190,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/eVabLqdWZ77c46I146">
+        <a href="https://buy.stripe.com/7sI6r6f13dvAfPq8wO">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -201,7 +201,7 @@ def money():
 
     with rol2:
         st.image('Imagenes/tesis.tiff')
-        st.info(' MXN 2400.00')
+        st.info(' MXN 2900.00')
 
     with rol3:
         st.markdown(Y,unsafe_allow_html=True)
@@ -232,7 +232,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/14kg1GdWZajo7iUfZ2">
+        <a href="https://buy.stripe.com/00g5n2cSV77c9r29AO">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -243,7 +243,7 @@ def money():
 
     with zol2:
         st.image('Imagenes/proto_posgrado.jpg')
-        st.info(' MXN 2300.00')
+        st.info(' MXN 2800.00')
 
     with zol3:
         st.markdown(W,unsafe_allow_html=True)
@@ -275,8 +275,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/bIY02I6ux2QWeLm8wC
-">
+        <a href="https://buy.stripe.com/cN202I069ajoeLm7sH">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -287,7 +286,7 @@ def money():
 
     with pol2:
         st.image('Imagenes/posgradotesis.png')
-        st.info(' MXN 3400.00')
+        st.info(' MXN 3900.00')
 
     with pol3:
         st.markdown(p,unsafe_allow_html=True)
