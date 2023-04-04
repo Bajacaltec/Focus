@@ -19,7 +19,10 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
+    st.image('/Users/alonso/Focus/Imagenes/promo1.jpg')    
+
     sol1,sol2,sol3=st.columns([2,2,1])
+    
     with sol1:
         st.success('Cotización gratis, somos la opción más económica del mercado!!!')
     with sol2:
@@ -27,8 +30,6 @@ def main():
     with sol3:
         st.image('Imagenes/videollamada.png',width=50)
    
-    st.warning('Asesoria en tesis de licenciatura a tan solo 2400.00 MXN y tesis de posgrado (especialidad médica) en 3700.00 MXN')
-    
     hol1,hol2,hol3=st.columns(3)
     with hol1:
         busqueda=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json')
