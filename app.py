@@ -59,7 +59,7 @@ elif seleccion=='Editores':
 elif seleccion=='Contacto':
     contacto()
 
- 
+
  
  
 elif seleccion=='Costos':
