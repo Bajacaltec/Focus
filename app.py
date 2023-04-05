@@ -62,7 +62,7 @@ elif seleccion=='Contacto':
  
  
  
-elif seleccion=='Pago':
+elif seleccion=='Costos':
     money()
 
 
