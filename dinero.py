@@ -30,7 +30,7 @@ def money():
     with bol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado con captura de datos')
-        st.caption('Tesis a nivel posgrado con captura de datos(especialidad médica')
+        st.caption('Tesis a nivel posgrado con captura de datos(especialidad médica)')
 
 
     b="""<head>
