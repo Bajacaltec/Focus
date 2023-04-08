@@ -50,8 +50,7 @@ if seleccion=='Principal':
 
 elif seleccion=='Editores':
     alonso()
-    cesar()
-    lissvia()       
+          
 
 
 
