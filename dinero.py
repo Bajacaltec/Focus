@@ -5,6 +5,7 @@ import streamlit as st
 from pathlib import Path
 import requests
 from streamlit_lottie import st_lottie
+
 def load_lottieurl(url: str):
         r = requests.get(url)
         if r.status_code != 200:
@@ -30,7 +31,7 @@ def money():
     with bol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado con captura de datos')
-        st.caption('Tesis a nivel posgrado con captura de datos(especialidad médica)')
+        st.caption('Asesoría para tesis a nivel posgrado con captura de datos(especialidad médica)')
 
 
     b="""<head>
@@ -121,7 +122,7 @@ def money():
     with lol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel licenciatura')
-        st.caption('Protocolo de investigación a nivel licenciatura: enfermería, odontología y medicina')
+        st.caption('Asesoría para protocolo de investigación a nivel licenciatura: enfermería, odontología y medicina')
 
 
     L="""<head>
@@ -170,7 +171,7 @@ def money():
     with rol1:
         st.caption('Servicio')
         st.subheader('Tesis de licenciatura')
-        st.caption('Tesis de nivel licenciatura: enfermería, odontología y medicina')
+        st.caption('Asesoría para tesis de nivel licenciatura: enfermería, odontología y medicina')
 
 
 
@@ -213,7 +214,7 @@ def money():
     with zol1:
         st.caption('Servicio')
         st.subheader('Protocolo de investigación nivel posgrado')
-        st.caption('Protocolo de investigación a nivel posgrado: enfermeria, odontología y medicina')
+        st.caption('Asesoría para protocolo de investigación a nivel posgrado: enfermeria, odontología y medicina')
 
 
 
@@ -258,7 +259,7 @@ def money():
     with pol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado')
-        st.caption('Tesis a nivel posgrado (especialidad médica')
+        st.caption('Asesoría para tesis a nivel posgrado (especialidad médica')
 
 
     p="""<head>
