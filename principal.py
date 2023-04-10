@@ -19,7 +19,7 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
-    st.image('Imagenes/promo1.jpg')    
+    st.image('/Users/alonso/Focus/Imagenes/tesisases.jpeg')    
 
     sol1,sol2,sol3=st.columns([2,2,1])
     

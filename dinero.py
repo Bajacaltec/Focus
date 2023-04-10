@@ -192,7 +192,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/7sI6r6f13dvAfPq8wO">
+        <a href="https://buy.stripe.com/3cs8zebOR2QW9r2fZi">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -203,7 +203,7 @@ def money():
 
     with rol2:
         st.image('Imagenes/tesis.tiff')
-        st.info(' MXN 2900.00')
+        st.info(' MXN 3900.00')
 
     with rol3:
         st.markdown(Y,unsafe_allow_html=True)
@@ -258,8 +258,8 @@ def money():
     pol1,pol2,pol3=st.columns([3,1,1])
     with pol1:
         st.caption('Servicio')
-        st.subheader('Tesis de investigación nivel posgrado')
-        st.caption('Asesoría para tesis a nivel posgrado (especialidad médica)')
+        st.subheader('Tesis de investigación posgrado')
+        st.caption('Asesoría para tesis de posgrado: enfermeria, odontología y medicina')
 
 
     p="""<head>
@@ -277,7 +277,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/cN202I069ajoeLm7sH">
+        <a href="https://buy.stripe.com/7sI9DiaKN9fk46IbJ1">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -288,7 +288,7 @@ def money():
 
     with pol2:
         st.image('Imagenes/posgradotesis.png')
-        st.info(' MXN 3900.00')
+        st.info(' MXN 5900.00')
 
     with pol3:
         st.markdown(p,unsafe_allow_html=True)
