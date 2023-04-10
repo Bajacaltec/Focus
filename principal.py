@@ -6,7 +6,7 @@ import requests
 import json
 from streamlit_lottie import st_lottie
 from dinero import money
-from asesores import alonso, cesar, lissvia
+from asesores import alonso
 import numpy as np
 import time
 import base64
