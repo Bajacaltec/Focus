@@ -259,7 +259,7 @@ def money():
     with pol1:
         st.caption('Servicio')
         st.subheader('Tesis de investigación nivel posgrado')
-        st.caption('Asesoría para tesis a nivel posgrado (especialidad médica')
+        st.caption('Asesoría para tesis a nivel posgrado (especialidad médica)')
 
 
     p="""<head>
