@@ -6,7 +6,7 @@ from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 from contacto import contacto
 from dinero import money
-from asesores import alonso, cesar, lissvia
+from asesores import alonso
 import numpy as np
 import time
 from principal import main
