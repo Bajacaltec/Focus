@@ -33,7 +33,7 @@ with tol3:
     st_lottie(mex,height=50)
     
     
-seleccion=option_menu(None,['Principal','Editores','Contacto','Costos'],orientation='horizontal',icons=['journal-medical','bi bi-headset','bi bi-cash-coin'], styles={
+seleccion=option_menu(None,['Principal','Editores','Contacto','Costos'],orientation='horizontal',icons=['journal-medical','bi bi-headset','','bi bi-cash-coin'], styles={
         "container": {"padding": "0!important", "background-color": "#E5EFF6"},
         "icon": {"color": "black", "font-size": "23px"}, 
         "nav-link": {"font-size": "18px", "text-align": "Center", "margin":"0px", "--hover-color": "#D3EA8B"},

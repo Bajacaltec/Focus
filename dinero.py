@@ -27,46 +27,7 @@ def money():
     
     
     #tesis de investigación nivel posgrado
-    bol1,bol2,bol3=st.columns([3,1,1])
-    with bol1:
-        st.caption('Servicio')
-        st.subheader('Tesis de investigación nivel posgrado con captura de datos')
-        st.caption('Asesoría para tesis a nivel posgrado con captura de datos(especialidad médica)')
-
-
-    b="""<head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Button</title>
-    <style>
-        .container{
-            height: 50px;
-            width: 100px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/5kA7vaf132QWbza14e">
-            <button class="btn btn-primary btn-lg">Pagar</button>
-        </a>
-    </div>
-</body>
-    
-
-"""
-
-    with bol2:
-        st.image('Imagenes/captura.jpg')
-        st.info(' MXN 5,500.00')
-
-    with bol3:
-        st.markdown(b,unsafe_allow_html=True)
-        st.subheader("")
-    st.markdown('________')
-    
+      
     
     #Boton de pago
     x="""<head>
@@ -85,7 +46,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/dR6bLqf1363832EcN2">
+        <a href="https://buy.stripe.com/9AQ6r63ilbns32E3cx">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -105,7 +66,7 @@ def money():
 
     with lol2:
         st.image('Imagenes/anestadistica.jpg')
-        st.info(' MXN 1900.00')
+        st.info(' MXN 3500.00')
 
 
     with lol3:
@@ -113,53 +74,7 @@ def money():
         st.subheader("")
     st.markdown('_________')
     
-    
-    
-    
-    #Procotolo de investigación nivel licenciatura
-    lol1,lol2,lol3=st.columns([3,1,1])
-#PRUEBA
-    with lol1:
-        st.caption('Servicio')
-        st.subheader('Protocolo de investigación nivel licenciatura')
-        st.caption('Asesoría para protocolo de investigación a nivel licenciatura: enfermería, odontología y medicina')
-
-
-    L="""<head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Button</title>
-    <style>
-        .container{
-            height: 50px;
-            width: 100px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/7sI8ze6ux8bgav614l">
-            <button class="btn btn-primary btn-lg">Pagar</button>
-        </a>
-    </div>
-</body>
-    
-
-"""
-
-    with lol2:
-        st.image('Imagenes/protolic.jpeg')
-        st.info(' MXN 1700.00')
-
-    with lol3:
-        st.markdown(L,unsafe_allow_html=True)
-        st.subheader("")
-    st.markdown('_________')
-
-    
-    
+      
     
     
     
@@ -213,8 +128,8 @@ def money():
     zol1,zol2,zol3=st.columns([3,1,1])
     with zol1:
         st.caption('Servicio')
-        st.subheader('Protocolo de investigación nivel posgrado')
-        st.caption('Asesoría para protocolo de investigación a nivel posgrado: enfermeria, odontología y medicina')
+        st.subheader('Protocolo de investigación nivel enfermería')
+        st.caption('Asesoría para protocolo de investigación enfermería')
 
 
 

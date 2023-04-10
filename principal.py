@@ -19,7 +19,7 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
-    st.image('/Users/alonso/Focus/Imagenes/tesisases.jpeg')    
+    st.image('Imagenes/promoanalest.001.jpeg')    
 
     sol1,sol2,sol3=st.columns([2,2,1])
     
@@ -106,10 +106,10 @@ def main():
     #Columna 2    
     with dos:
         st.subheader('¿No sabes por donde empezar?')
-        st.markdown("- Encuentra el tema que te interesa")
-        st.markdown("- Busca información(Artículos, libros, etc.)")
-        st.markdown("- Haz una pregunta de investigación: ¿El uso de metformina vs insulina aumenta la posibilidad de hipoglicemias en un paciente con Diabetes mellitus tipo II? 🤔 ")
-        st.markdown("- Y así nace un proyecto de investigación")
+        st.markdown("Encuentra el tema que te interesa")
+        st.markdown("Busca información(Artículos, libros, etc.)")
+        st.markdown("Haz una pregunta de investigación: ¿El uso de metformina vs insulina aumenta la posibilidad de hipoglicemias en un paciente con Diabetes mellitus tipo II? 🤔 ")
+        st.markdown("Y así nace un proyecto de investigación")
 
         st.markdown('''
         <style>
@@ -120,6 +120,8 @@ def main():
         ''', unsafe_allow_html=True)
         st.markdown('___________')       
         st.info('Contactanos para poder ayudarte con tu proyecto de investigación')
+        st.video('Imagenes/recortado R.mov')
+        st.info('Análisis con R')
     with tres:
         
         st.write('¿Qué es la investigación, sino una cita a ciegas con el conocimiento? ')
@@ -137,6 +139,7 @@ def main():
     kol1,kol2,kol3=st.columns([1,1,2])
     with kol1:
         st.empty()
+       
         
     with kol2:
         st.empty()
