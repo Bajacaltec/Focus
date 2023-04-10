@@ -21,11 +21,6 @@ def alonso():
         st.write('Cirujano general (Esp.Médica)') 
         st.caption('Centro Médico Nacional Siglo XXI/Universidad Nacional Autónoma de México')
         st.write('Editor principal')
-        with st.container():
-            st.caption('Dentro de mi experiencia cuento con una larga trayectoría en el ámbito clínico-hospitalario, tuve la oportunidad de trabajar en áreas de laboratorio clínico, consulta externa, urgencias y áreas hospitarias.')
-            st.caption('Mi formación como maestro en ciencias me permitió conocer la investigación básica-experimental, realicé investigación en microbiología, biología celular y microscopía avanzada culminando con una tesis científica')
-            st.caption('Durante mi formación como especialista en cirugía general tuve la oportunidad de estudiar a pacientes con alta mortalidad sometidos a colecistectomía, realizando tesis de posgrado y actualmente se encuentra en proceso de publicación.')
-            
         
         
 
