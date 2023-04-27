@@ -62,7 +62,7 @@ def money():
     with lol1:
         st.caption('Servicio')
         st.subheader('Análisis estadístico')
-        st.caption('Análisis con R, se debe proporcionar base de datos')
+        st.caption('Análisis con R')
 
     with lol2:
         st.image('Imagenes/anestadistica.jpg')

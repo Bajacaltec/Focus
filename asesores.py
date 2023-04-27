@@ -16,6 +16,7 @@ def alonso():
     with col1:
         st.subheader('Dr. Fernando Alonso Núñez Moreno')
         st.write('Médico general CEUX ')
+        st.caption('Cédula federal 08747514')
         st.write('Maestro en ciencias de la vida (MC)')
         st.caption('Centro de Investigación Científica y de Educación Superior de Ensenada (Centro CONACYT)')
         st.write('Cirujano general (Esp.Médica)') 
