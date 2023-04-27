@@ -56,6 +56,7 @@ def main():
     eins,swei,drei,fear=st.columns(4)
     with eins:
         st.image('Imagenes/articulocureus.png')
+        st.caption('https://www.cureus.com/articles/147372-gastric-necrosis-due-to-small-bowel-obstruction-a-case-report')
     with swei:
         st.image('Imagenes/posterneurospora.png')
     with drei:
