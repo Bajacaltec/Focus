@@ -19,17 +19,8 @@ def load_lottieurl(url: str):
 
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
-    st.image('Imagenes/promoanalest.001.jpeg')    
-
-    sol1,sol2,sol3=st.columns([2,2,1])
-    
-    with sol1:
-        st.success('Cotización gratis, somos la opción más económica del mercado!!!')
-    with sol2:
-        st.info('Contactanos por 📧, Whatsapp o ➡️')
-    with sol3:
-        st.image('Imagenes/videollamada.png',width=50)
-   
+    st.image('Imagenes/promoanalest.001.jpeg')   
+       
     hol1,hol2,hol3=st.columns(3)
     with hol1:
         busqueda=load_lottieurl('https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json')
@@ -63,6 +54,7 @@ def main():
         st.image('Imagenes/tesiscxcolcardio.png')
     with fear:
         st.image('Imagenes/tesismaestria.png')
+        st.caption('https://cicese.repositorioinstitucional.mx/jspui/handle/1007/662')
 
    
     
@@ -130,12 +122,10 @@ def main():
         lotbook=load_lottieurl('https://assets1.lottiefiles.com/packages/lf20_tnrzlN.json')
         st_lottie(lotbook,width=80)
         
-        st.subheader('Desarrollo de Webapps para facilitar tu trabajo')
-        st.image('Imagenes/Webapp medpost.png')   
-        st.caption('Proximamente desarrollaremos aplicaciones Web para facilitar la captura de datos y el desarrollo de proyectos de investigación con ayuda del Medpost') 
-        st.video('Imagenes/cxcorazon.mp4',)
-        st.info('Video 1. Pericardiotomía y exposición de miocardio. Cirugía por trauma penetrante de tórax por proyectil de arma de fuego. Hospital de traumatología Lomas Verdes IMSS')
-
+        st.subheader('Web app Tessextractor con IA')
+        st.caption('Se encuentra en desarrollo la Webapp de Tessextractor que con el apoyo de la inteligencia artificial faicilitará el desarrollo de trabajos de investigación, esperala proximamente')
+        workinprog=load_lottieurl('https://assets4.lottiefiles.com/packages/lf20_vDd5lrv57P.json')
+        st_lottie(workinprog,width=300)
     
     kol1,kol2,kol3=st.columns([1,1,2])
     with kol1:
