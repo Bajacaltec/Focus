@@ -46,7 +46,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/9AQ6r63ilbns32E3cx">
+        <a href="https://buy.stripe.com/fZe9Dig570IOfPq00m">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -66,7 +66,7 @@ def money():
 
     with lol2:
         st.image('Imagenes/anestadistica.jpg')
-        st.info(' MXN 3500.00')
+        st.info(' MXN 2900.00')
 
 
     with lol3:
