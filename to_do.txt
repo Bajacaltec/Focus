@@ -1,2 +1,2 @@
 Contacto
--Cambiar el formulario por uno nativo de Streamlit
+-Cambiar el formulario de correo electrónico por uno nativo de Streamlit

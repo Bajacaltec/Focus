@@ -15,6 +15,7 @@ st.set_page_config(layout='wide',page_title='Tess extractor',menu_items=None,pag
 
 ####
 # encabezado y menú
+@st.cache
 def load_lottieurl(url: str):
     r = requests.get(url)
     if r.status_code != 200:
