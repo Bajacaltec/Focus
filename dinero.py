@@ -6,7 +6,6 @@ from pathlib import Path
 import requests
 from streamlit_lottie import st_lottie
 
-@st.cache
 def load_lottieurl(url: str):
         r = requests.get(url)
         if r.status_code != 200:
