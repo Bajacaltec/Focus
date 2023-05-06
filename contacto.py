@@ -12,7 +12,7 @@ def contacto():
     col1,col2=st.columns(2)
     with col1:
         contact_form = """
-        <form action="https://formsubmit.co/mdfnunez@gmail.com" method="POST">
+        <form action="https://formsubmit.co/tessextractor@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
         
         <input type="text" name="email" placeholder="Tu correo electrónico (email)" required>
