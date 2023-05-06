@@ -192,7 +192,7 @@ def money():
 <body>
     <div class="container">
         <h1    "text-align:center;"></h1>
-        <a href="https://buy.stripe.com/7sI9DiaKN9fk46IbJ1">
+        <a href="https://buy.stripe.com/28o5n21adezEfPq14r">
             <button class="btn btn-primary btn-lg">Pagar</button>
         </a>
     </div>
@@ -203,7 +203,7 @@ def money():
 
     with pol2:
         st.image('Imagenes/posgradotesis.png')
-        st.info(' MXN 5900.00')
+        st.info(' MXN 590.00 por mes (12 meses de seguimiento)')
 
     with pol3:
         st.markdown(p,unsafe_allow_html=True)
