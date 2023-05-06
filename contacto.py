@@ -19,7 +19,7 @@ def contacto():
         <input type="text" name="Número de telefono (opcional)" placeholder="Número de teléfono" >
         <input type="text" name="name" placeholder="¿Cual es tu nombre?" required>
         <textarea name="message" placeholder="¿En que podemos ayudarte?"></textarea>
-        <input type="hidden" name="_next" value="https://bajacaltec-focus-correo-app-g0xpcv.streamlit.app">
+        <input type="hidden" name="_next" value="https://correo-e5co.onrender.com">
         <button type="submit">Enviar</button>
         </form>
         """
