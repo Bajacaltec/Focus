@@ -65,6 +65,7 @@ elif seleccion=='Contacto':
 elif seleccion=='Costos':
     money()
 
+
 elif seleccion=='Privacidad':
     st.write("""Política de Privacidad
 

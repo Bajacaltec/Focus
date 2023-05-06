@@ -16,7 +16,8 @@ def load_lottieurl(url: str):
     if r.status_code != 200:
         return None
     return r.json()
-@st.cache
+
+
 def main():
     st.subheader('Nos especializamos en proyectos de investigación en el área de la salud. ')
     st.image('Imagenes/análisis estadístico.001.jpeg')   
